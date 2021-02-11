@@ -12,13 +12,13 @@
 
 ## 产品特性
 
-- GROVE 接口, 支持 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc).
+- HY2.0-4P 接口, 支持 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc).
 - 2x LEGO 兼容孔
 
 ## 包含
 
 - 1x DAC Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -41,8 +41,8 @@
       <td>0-3.3V</td>
    </tr>
    <tr>
-      <td>通讯方式</td>
-      <td>IIC</td>
+      <td>通信协议</td>
+      <td>I2C：0x60</td>
    </tr>
    <tr>
       <td>净重</td>
@@ -78,7 +78,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>DAC Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -92,9 +92,9 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[请点击此处获取Arduino示例代码](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/DAC_MCP4725)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/DAC_MCP4725)
 
 ### 2. UIFlow
 

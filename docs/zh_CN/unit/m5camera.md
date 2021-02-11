@@ -124,9 +124,9 @@
 | Power Supply 3.3V     | 3V3      | 3V3       |
 | Ground                | GND      | GND       |
 
-**GROVE 接口**
+**HY2.0-4P 接口**
 
-| *Grove*         | *M5Camera*  |
+| *HY2.0-4P*         | *M5Camera*  |
 | :-----------: | :------:  |
 | SCL           | IO13      |
 | SDA           | **IO4**      |
@@ -143,7 +143,7 @@
 
 **BME280 接口**
 
-*IIC 地址是 0x76*
+*I2C 地址是 0x76*
 
 | *BMP280*      |*M5Camera*  |
 | :-----------: | :------:  |

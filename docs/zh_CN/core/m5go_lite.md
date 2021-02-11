@@ -105,7 +105,7 @@
    </tr>
    <tr>
       <td>底座接口</td>
-      <td>PortA(IIC)、PortB(GPIO)、PortC(UART)</td>
+      <td>PortA(I2C)、PortB(GPIO)、PortC(UART)</td>
    </tr>
    <tr>
       <td>电池</td>
@@ -117,7 +117,7 @@
    </tr>
    <tr>
       <td>净重</td>
-      <td>14g</td>
+      <td>56.4g</td>
    </tr>
    <tr>
       <td>毛重</td>

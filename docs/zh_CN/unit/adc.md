@@ -25,7 +25,7 @@
 ## 包含
 
 - 1x ADC unit
-- 1x GROVE 线
+- 1x HY2.0-4P线缆
 - 1x HT3.96 Male Socket(2 pins)
 
 ## 应用
@@ -67,6 +67,10 @@
         <td>4μVp-p</td>
     </tr>
     <tr>
+        <td>通信协议</td>
+        <td>I2C：0x48</td>
+    </tr>
+    <tr>
       <td>净重</td>
       <td>4g</td>
    </tr>
@@ -104,7 +108,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core ( GROVE A )</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core ( PORT A )</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>ADC Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -114,13 +118,13 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[请点击此处获取Arduino代码](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ADC_ADS1100)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ADC_ADS1100)
 
 ### 2. UIFlow
 
-[请点击此处获取UIFlow](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ADC/UIFlow)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ADC/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/ADC/example_unit_adc_01.webp">
 

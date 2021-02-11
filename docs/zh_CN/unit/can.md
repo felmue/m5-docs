@@ -22,7 +22,7 @@
 ## 包含
 
 - 1x CAN Unit
-- 1x HY2.0 线缆(5CM)
+- 1x HY2.0-4P线缆(5CM)
 
 ## 应用
 
@@ -115,8 +115,13 @@
 ### 引脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>CAN Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
+</table>
+
+<table>
+ <tr><td>M5Core(PORT C)</td><td>GPIO16</td><td>GPIO17</td><td>5V</td><td>GND</td></tr>
+ <tr><td>CAN Unit</td><td>RXD</td><td>TXD</td><td>5V</td><td>GND</td></tr>
 </table>
 
 ## 原理图
@@ -132,7 +137,7 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
 [Click here to download Example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/CAN)
 

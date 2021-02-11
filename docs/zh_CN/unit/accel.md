@@ -6,7 +6,7 @@
 
 ## 描述
 
-**ACCEL** 是一款运动数据传感器. 内部集成**ADXL345**三轴加速度计.可测量范围高达±16g（13位分辨率）的加速度数据.输出数据格式为16位二进制补码，可通过I2C数字接口访问.
+**ACCEL** 是一款运动数据传感器. 内部集成**ADXL345**三轴加速度计.可测量范围高达±16g（13位分辨率）的加速度数据.输出数据格式为16位二进制补码，可通过I2C数字接口访问(地址0x53).
 
 什么是加速度计?<br>
 加速度计是一种加速力的测量设备。这些力可能是静态的(如重力). 或者是动态的由加速度计的移动或振动引起.
@@ -27,7 +27,7 @@
 ## 套件清单
 
 - 1x ACCEL unit
-- 1x GROVE 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -45,6 +45,10 @@
     <tr>
         <td>测量范围</td>
         <td>±16g</td>
+    </tr>
+    <tr>
+        <td>通信协议</td>
+        <td>I2C：0x53</td>
     </tr>
     <tr>
         <td>分辨率</td>
@@ -95,7 +99,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core ( GROVE A )</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core ( PORT A )</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>ACC Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -110,11 +114,11 @@
 
 ## 案例程序
 
-### Arduino
+### 1. Arduino
 
 - [点击此处获取Arduino案例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ACCEL_ADXL345).
 
-## UIFlow
+### 2. UIFlow
 
 - [点击此处获取UIFlow案例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ACCEL/UIFLOW). 
 

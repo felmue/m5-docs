@@ -14,7 +14,7 @@
 
 ## 描述
 
-**Timer Camera X** 是一款基于ESP32-D0WDQ6-V3的摄像头模块，板载8M PSRAM，采用300万像素的摄像头（OV3660）可视角66.5°，最高可实现拍摄1600 x 1200分辨率的照片，内置140mAh电池与LED状态指示灯，在指示灯下方有一颗的复位按键，方便开发调试。该摄像头主打超低功耗设计，通过RTC(BM8563)可实现定时休眠与唤醒，休眠电流可低至2μA，开启定时拍照(每小时一张)后，电池可支持连续工作一个月以上。模块支持WiFi图像传输和USB端口调试，底部HY2.0-4P端口输出，可连接其他外设。通过M5Burner烧录固件，可直接使用Camera-Tool对Timer Camera X进行设置，也可在UIFlow中对Timer Camera X数据进行处理。
+**Timer Camera X** 是一款基于ESP32-D0WDQ6-V3的摄像头模块，板载8M PSRAM，采用300万像素的摄像头（OV3660）, DFOV 66.5°，最高可实现拍摄2048x1536分辨率的照片，内置140mAh电池与LED状态指示灯，在指示灯下方有一颗的复位按键，方便开发调试。该摄像头主打超低功耗设计，通过RTC(BM8563)可实现定时休眠与唤醒，休眠电流可低至2μA，开启定时拍照(每小时一张)后，电池可支持连续工作一个月以上。模块支持WiFi图像传输和USB端口调试，底部HY2.0-4P端口输出，可连接其他外设。通过M5Burner烧录固件，可直接使用Camera-Tool对Timer Camera X进行设置，也可在UIFlow中对Timer Camera X数据进行处理。
 
 >Timer Camera系列采用的低功耗电源管理方案与CORE与StickC设备有所不同，使用时，PWR按键作为开机按键使用(长按2s)，如需要使设备关机，则需要通过软件API或是按下PCB板上的复位按键。
 
@@ -68,9 +68,9 @@
       <td>8-/10-Bit RAW, RGB and YCbCr output, compression.</td>
    </tr>
    <tr>
-      <td>最大图像传输速率</td>
+      <td>最大图像传输速率(OV3660)</td>
       <td>
-         2040x1536: 15fps /
+         2048x1536: 15fps /
          1080p: 20fps /
          720p: 45fps	 /
          XGA(1024x768) : 45fps /
@@ -79,7 +79,7 @@
       </td>
    </tr>
    <tr>
-      <td>视角</td>
+      <td>DFOV</td>
       <td>66.5°</td>
    </tr>
    <tr>
@@ -102,7 +102,7 @@
 
 ## EasyLoader
 
->EasyLoader是一个简洁快速的程序烧录器，其内置了一个产品相关的案例程序，通过简单步骤将其烧录至主控，即可进行一系列的功能验证.**(程序烧录前，请根据设备类型安装相应驱动程序. M5Core型主机[请点击此处查看CP210X驱动安装教程](zh_CN/arduino/arduino_development?id=安装串口驱动)，M5StickC/V/T/ATOM系列可免驱动使用)**
+>EasyLoader是一个简洁快速的程序烧录器，其内置了一个产品相关的案例程序，通过简单步骤将其烧录至主控，即可进行一系列的功能验证.
 
 <div class="easyloader-box">
     <div style="background-color:white;">
@@ -150,9 +150,9 @@
 | Power Supply 3.3V     | 3V3      | 3V3       |
 | Ground                | GND      | GND       |
 
-**GROVE 接口**
+**HY2.0-4P 接口**
 
-| *Grove*         | *TimerCamera*  | 
+| *HY2.0-4P*         | *TimerCamera*  | 
 | :-----------: | :------:  | 
 | SCL           | IO13      | 
 | SDA           | IO4       |
@@ -169,13 +169,20 @@
 
 | *BAT*         | *TimerCamera*  |
 | :-----------:| :------:  | 
-| BAT_ADC_Pin     | IO33     | 
+| BAT_ADC_Pin     | IO38     | 
+| BAT_HOLD_Pin     | IO33     | 
 
 ## 相关链接
 
 - **数据手册** 
    - [ESP32-D0WDQ6-V3](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/esp32_datasheet_cn.pdf) 
    - [OV3660](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/OV3660_CSP3_DS_1.3_sida.pdf)
+
+## 原理图
+
+[TimerCAM_A1-ESP32_SUBSYS](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/TimerCAM/TimerCAM_A1-ESP32_SUBSYS.pdf)
+
+[TimerCAM_A2-PMS_UART](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/TimerCAM/TimerCAM_A2-PMS_UART.pdf)
 
 
 ## 案例程序
@@ -198,13 +205,19 @@
 
 **[使用HTTP云端图片接口服务-UIFlow](zh_CN/quick_start/timer_cam/quick_start_uiflow)获取图片**
 
-**[使用Arduino IDE](zh_CN/quick_start/timer_cam/quick_start_arduino)开发**
+**[使用Arduino](zh_CN/quick_start/timer_cam/quick_start_arduino)开发**
+
+## 相关视频
+
+<video class="video_size" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Unit/TimerCAM.mp4" type="video/mp4">
+</video>
 
 <script>
 
    var purchase_link = 'https://m5stack.com/collections/m5stack-new-arrival/products/esp32-psram-timer-camera-x-ov3660';
 
-   var quickstart_link = 'https://docs.m5stack.com/#/en/quick_start/timer_cam/quick_start_list';
+   var quickstart_link = 'https://docs.m5stack.com/#/zh_CN/quick_start/timer_cam/quick_start_list';
 
    anchor_search(purchase_link,quickstart_link);
    scrollFunc();

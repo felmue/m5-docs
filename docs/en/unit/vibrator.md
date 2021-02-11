@@ -17,7 +17,6 @@ These days miniature vibrating motors are used in a wide range of products, not 
 
 - single-direction rotation
 
-
 ## Include
 
 - 1x VIBRATOR MOTOR unit
@@ -25,7 +24,7 @@ These days miniature vibrating motors are used in a wide range of products, not 
 
 ## Applications
 
-- Vibration message functions 
+- Vibration message functions
 
 ## Specification
 
@@ -67,24 +66,25 @@ These days miniature vibrating motors are used in a wide range of products, not 
 
 >2. After downloading the software, double-click to run the application, connect the M5 device to the computer through the data cable, select the port parameters, click **"Burn"** to start burning. (**For M5StickC burning, please Set the baud rate to 750000 or 115200**)
 
-?>3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
+>3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-To get complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/VIBRATOR)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/VIBRATOR)
 
 ### 2. UIFlow
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/VIBRATOR/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/VIBRATOR/UIFlow)
 
 <img src="assets/img/product_pics/unit/vibrator_motor/vibrator.webp">
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 
    var purchase_link = 'https://m5stack.com/collections/m5-unit/products/vibration-motor-unit';
-
 
    anchor_search(purchase_link);
    scrollFunc();

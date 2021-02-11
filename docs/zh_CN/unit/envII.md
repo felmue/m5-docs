@@ -8,20 +8,20 @@
 ## 描述
 
 
-**ENV II** 是一款环境传感器,内部集成SHT30和BMP280，用于检测温度、湿度、大气压值数据.SHT30是高精度低功耗的数字温湿度传感器,并支持I2C接口（0x44）.BMP280是一款专为移动应用而设计的绝对气压传感器，具有较高的精准度.适合应用在一些小型低功耗终端上.对于需要对环境数据进行快速采集检测的项目来说, ENV Unit是一个兼顾性能与性价比的不错选择.
+**ENV II** 是一款环境传感器,内部集成SHT30和BMP280，用于检测温度、湿度、大气压值数据.SHT30是高精度低功耗的数字温湿度传感器,并支持I2C接口(SHT30:0x44, BMP280:0x76).BMP280是一款专为移动应用而设计的绝对气压传感器，具有较高的精准度.适合应用在一些小型低功耗终端上.对于需要对环境数据进行快速采集检测的项目来说, ENV Unit是一个兼顾性能与性价比的不错选择.
 
 ## 产品特性
 
 - 简单易用
 - 较高精准度
 - 支持IIC
-- GROVE 接口, 支持平台 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc).
+- HY2.0-4P 接口, 支持平台 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc).
 - 2x LEGO 兼容孔
 
 ## 包含
 
 - 1x ENV-II Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -144,7 +144,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>ENV II Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -163,17 +163,17 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
 该案例将使用 ENVII Unit ，实现温度、湿度、大气压数据的读取.
 1, 在进行程序编译前，请安装`Adafruit BMP280 Library`
 2, 并将`Adafruit_Sensor.h`复制至`C:\Users\<user_name>\Documents\Arduino\libraries\Adafruit_BMP280_Library`
 
-[请点击此处下载Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENVII/Arduino)
+- [点击此处获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENVII/Arduino)
 
 ### 2. UIFlow
 
-[请点击此处UIFlow](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENVII/UIFlow)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENVII/UIFlow)
 
 <img src="assets/img/product_pics/unit/envII/envII_03.webp" width="60%">
 

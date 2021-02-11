@@ -23,7 +23,7 @@
 ## 包含
 
 - 1x Barometric Pressure Unit
-- 1x Grove 线(5cm)
+- 1x HY2.0-4P线缆(5cm)
 
 ## 应用
 
@@ -72,6 +72,10 @@
    <tr>
       <td>工作电压</td>
       <td>1.71V - 3.6V</td>
+   </tr>
+   <tr>
+      <td>通信协议</td>
+      <td>I2C：0x76</td>
    </tr>
    <tr>
    <td>净重</td>
@@ -128,15 +132,22 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
  <tr><td>IMU Unit</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
 </table>
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[点击这里获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BPS_Unit)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BPS_Unit)
+
+### 2. UIFlow
+
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BPS_Unit/UIFlow)
+
+<img src="assets/img/product_pics/unit/bps/BPS_Example.webp" width="80%" height="80%">
+
 
 <script>
 

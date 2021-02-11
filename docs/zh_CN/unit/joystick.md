@@ -12,7 +12,7 @@
 
 <img src="assets/img/product_pics/unit/M5GO_Unit_joystick_02.webp" width="50%" height="50%">
 
-该 Unit 通过GROVE A接口与M5Core进行通信，I2C地址为0x52.
+该 Unit 通过PORT A接口与M5Core进行通信，I2C地址为0x52.
 
 ## 产品特性
 
@@ -22,7 +22,7 @@
 ## 包含
 
 - 1x JOYSTICK Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -35,6 +35,10 @@
    <tr style="font-weight:bold">
       <td>规格</td>
       <td>参数</td>
+   </tr>
+   <tr>
+      <td>通讯协议</td>
+      <td>I2C：0x52</td>
    </tr>
    <tr>
       <td>X、Y轴范围</td>
@@ -92,7 +96,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>JOYSTICK Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -106,9 +110,9 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-- [请点击此处获取Arduino示例代码](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/JOYSTICK)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/JOYSTICK)
 
 <img src="assets/img/product_pics/unit/unit_example/JOYSTICK/example_unit_joystick_04.webp">
 

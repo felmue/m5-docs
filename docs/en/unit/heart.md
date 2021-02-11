@@ -6,9 +6,11 @@
 
 ## Description
 
-**HEART** is build with **MAX30100**.
+**HEART** is built using the **MAX30100** chipset.
 
-MAX30100 is a complete pulse oximetry and heartrate sensor system solution designed for the demanding requirements of wearable devices. The MAX30100 provides very small total solution size without sacrificing optical or electrical performance. Minimal external hardware components are needed for integration into a wearable device.
+MAX30100 is a complete pulse oximetry and heart-rate sensor system solution designed for the demanding requirements of wearable devices.
+
+The MAX30100 provides very small total solution size without sacrificing optical or electrical performance. Minimal external hardware components are needed for integration into a wearable device.
 
 - How do we use this Unit to test the heart rate ?
 **Put your finger on the detection area.**
@@ -41,8 +43,8 @@ MAX30100 is a complete pulse oximetry and heartrate sensor system solution desig
       <td>Parameter</td>
    </tr>
    <tr>
-      <td>communication protocol</td>
-      <td>IIC：0x57</td>
+      <td>Communication protocol</td>
+      <td>I2C：0x57</td>
    </tr>
    <tr>
       <td>Operating Voltage</td>
@@ -114,17 +116,25 @@ MAX30100 is a complete pulse oximetry and heartrate sensor system solution desig
 
 ## Example
 
-### Arduino IDE
+### 1. Arduino
 
 To get the code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/HEART_MAX30100)
 
 <img src="assets/img/product_pics/unit/unit_example/HEART/example_unit_heart_01.webp">
 
+### 2. UIFlow
+
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/HEART/UIFlow)
+
+<img src="assets/img/product_pics/unit/unit_example/HEART/Heart_Example.webp" width="80%" height="80%">
+
 <!-- ### 2. UIFlow
 
-*If you want the complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/JOYSTICK/UIFlow).*
+*- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/JOYSTICK/UIFlow).*
 
 <img src="assets/img/product_pics/unit/unit_example/JOYSTICK/example_unit_joystick_01.webp" width="30%" height="30%"> <img src="assets/img/product_pics/unit/unit_example/JOYSTICK/example_unit_joystick_02.webp" width="58%" height="58%"> -->
+
+<el-divider content-position="right">Last updated: 2020-12-11</el-divider>
 
 <script>
 

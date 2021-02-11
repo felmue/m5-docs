@@ -18,7 +18,7 @@
 ## 包含
 
 -  1x Ultrasonic Unit
--  1x Grove连接线(20cm)
+-  1x PORT连接线(20cm)
 
 ## 应用
 
@@ -35,6 +35,10 @@
    <tr>
       <td>测距芯片</td>
       <td>RCWL-9600</td>
+   </tr>
+   <tr>
+      <td>通讯协议</td>
+      <td>I2C：0x57</td>
    </tr>
    <tr>
       <td>测量距离</td>
@@ -99,19 +103,32 @@
     </div>
 </div>
 
+## 管脚映射
+
+<table>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>Ultrasonic Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
+</table>
+
 ## 相关链接
 
   - **[Ceramic Ultrasonic Sensor TC40-10T/R](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/TC40-10T-R.pdf)**
 
 ## 案例程序
 
-### Arduino
+### 1. Arduino
 
-- 点击此处[下载示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ULTRA)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ULTRA/Arduino/ULTRA)
+
+### 2. UIFlow
+
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ULTRA/UIFlow)
+
+<img src="assets/img/product_pics/unit/sonic/ULTRA.webp" width="80%" height="80%">
 
 <script>
 
-   var purchase_link = '';
+   var purchase_link = 'https://m5stack.com/products/ultrasonic-distance-unit-rcwl-9600';
 
    anchor_search(purchase_link);
    scrollFunc();

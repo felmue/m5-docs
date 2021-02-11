@@ -68,7 +68,7 @@
    </tr>
    <tr>
       <td>墨水屏</td>
-      <td>型号：EPD_ED047TC1 | 540*960@4.7" | 灰度 : 16级 | 显示区域 : 58.32*103.68mm | 显示驱动芯片 : IT8951</td>
+      <td>型号：EPD_ED047TC1 | 540*960@4.7" | 灰度 : 16级 | 显示区域 : 58.32*103.68mm | 显示驱动芯片 : IT8951E</td>
    </tr>
    <tr>
       <td>物理按键</td>
@@ -123,6 +123,11 @@
    - [ToDo](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_M5Paper_Todo.exe)
    - [Calculator](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_M5Paper_Calculator.exe)
 
+- **MacOS** 
+   - [FactoryTest](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Paper_FactoryTest.dmg)
+   - [ToDo](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Paper_Todo.dmg)
+   - [Calculator](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Paper_Calculator.dmg)
+
 
 ## 管脚映射
 
@@ -132,7 +137,7 @@
  
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO13</td><td>GPIO12</td><td>GPIO14</td><td>GPIO15</td><td>GPIO4</td></tr>
- <tr><td>IT8951</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td><td>/</td></tr>
+ <tr><td>IT8951E</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td><td>/</td></tr>
  <tr><td>TF-card(microSD)</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>/</td><td>CS</td></tr>
 </table>
 
@@ -140,8 +145,9 @@
 **拨轮开关**
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO37</td><td>GPIO38</td><td>GPIO39</td></tr>
- <tr><td>拨轮开关</td><td>右</td><td>中按钮/电源按钮</td><td>左</td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO37</td><td>GPIO38</td><td>GPIO39</td><td>GPIO2</td></tr>
+ <tr><td>拨轮开关</td><td>右</td><td>中按钮/电源按钮</td><td>左</td><td>/</td></tr>
+ <tr><td>电源控制</td><td>/</td><td>/</td><td>/</td><td>MOS</td></tr>
 </table>
 
 
@@ -228,7 +234,8 @@
 
 - **API** 
 
-   - [Arduino API](zh_CN/arduino/arduino_home_page?id=m5paper)
+   - [Arduino API](zh_CN/arduino/arduino_home_page?id=m5paper_api)
+   - [image2gray tool](https://github.com/m5stack/M5EPD/tree/main/tools)
 
 ## Example
 
@@ -240,6 +247,7 @@
    - [M5EPD_TTFExample](https://github.com/m5stack/M5EPD_TTFExample)
    - [M5EPD-Lib](https://github.com/m5stack/M5EPD)
 
+>在使用FactoryTest加载特殊字符(如中文，日文)时，请向TF卡根目录放入字体文件，并命名为`font.ttf`。[ttf文件下载地址](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/example/Font.ttf)
 
 ## 原理图
 
@@ -247,8 +255,16 @@
 
 ## 相关视频
 
+- 产品介绍
+
 <video class="video_size" controls>
     <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/M5PAPER.mp4" type="video/mp4">
+</video>
+
+- M5Paper背板拆解教程
+
+<video class="video_size" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/paper_open_shell.mp4" type="video/mp4">
 </video>
 
 <script>

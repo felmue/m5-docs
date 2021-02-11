@@ -2,11 +2,11 @@
 
 <el-tag effect="plain">SKU:U041</el-tag>
 
-<div class="product_pic"><img src="assets/img/product_pics/unit/pbhub/pbhub_p1.webp"><img src="assets/img/product_pics/unit/pbhub/pbhub_p2.webp"></div>
+<div class="product_pic"><img src="assets/img/product_pics/unit/pbhub/pbhub_p1.webp"></div>
 
 ## 描述
 
-**PbHUB**, 是一款 GPIO GROVE PORTB 扩展器,能够将单路 GPIO GROBE 接口拓展至六路.内部集成MEGA328，且搭载驱动程序.不支持多 Unit 嵌套，这意味着无法像**PaHUB**一样挂载多个相同协议、地址的设备.
+**PbHUB**, 是一款 GPIO HY2.0-4P PORTB 扩展器,能够将单路 GPIO GROBE 接口拓展至六路.内部集成MEGA328，且搭载驱动程序.不支持多 Unit 嵌套，这意味着无法像**PaHUB**一样挂载多个相同协议、地址的设备.
 
 Port B 中的两条数据总线与ESP32的**GPIO36**和**GPIO26**连接,可根据需求编程配置多个端口的输入(支持模拟输入）、输出.
 
@@ -22,14 +22,14 @@ Port B 中的两条数据总线与ESP32的**GPIO36**和**GPIO26**连接,可根�
 
 ## 产品特性
 
-- GPIO GROVE PORTB 拓展
+- GPIO HY2.0-4P PORTB 拓展
 - 2x LEGO 兼容孔
 - 1-6 拓展
 
 ### 包含
 
 - 1x PbHUB Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 规格参数
 
@@ -37,6 +37,10 @@ Port B 中的两条数据总线与ESP32的**GPIO36**和**GPIO26**连接,可根�
    <tr style="font-weight:bold">
       <td>规格</td>
       <td>参数</td>
+   </tr>
+   <tr>
+      <td>通讯协议</td>
+      <td>I2C：0x61(可通过电阻A0，A1，A2修改)</td>
    </tr>
    <tr>
       <td>净重</td>
@@ -58,7 +62,7 @@ Port B 中的两条数据总线与ESP32的**GPIO36**和**GPIO26**连接,可根�
 
 ## 修改I2C地址
 
-该 Unit 的 I2C 地址为0x61（可通过焊接电阻A0~A2进行更改, 地址范围为0x61~0x68）.
+该 Unit 的 I2C 地址为0x61（可通过焊接电阻A0 ~ A2进行更改, 地址范围为0x61 ~ 0x68）.
 
 <img src="assets/img/product_pics/unit/pbhub/pbhub_i2c_addr.webp" width="300px">
 
@@ -151,7 +155,7 @@ Port B 中的两条数据总线与ESP32的**GPIO36**和**GPIO26**连接,可根�
 - Set oneLED Color : LED 地址(2bytes) + RGB 值(3bytes)
 - Set moreLED Color : LED 起始地址(2bytes) + LED 结束地址(2bytes) + RGB 值(3bytes)
 
-[获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/PbHUB/UIFlow)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/PbHUB/UIFlow)
 
 <img src="assets/img/product_pics/unit/pbhub/pbhub.webp">
 

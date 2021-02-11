@@ -6,7 +6,7 @@
 
 ## Description
 
-**FAN** is designed with an N20 Motor and a small fan piece is included in the package.
+**FAN** unit is designed with an N20 Motor and a small fan piece is included in the package.
 This N20 motor is has a 5V supply voltage. The output shaft has a rotational speed of 8800 RPM.
 
 <img src="assets/img/product_pics/unit/fan/unit_fan_03.webp" width="30%" height="30%">
@@ -22,7 +22,7 @@ This N20 motor is has a 5V supply voltage. The output shaft has a rotational spe
 
 - 1x FAN unit
 - 1x GROVE Cable
-- 2x Plastic fan paddle 
+- 2x Plastic fan paddle
 
 ## Applications
 
@@ -67,19 +67,21 @@ This N20 motor is has a 5V supply voltage. The output shaft has a rotational spe
 
 >2. After downloading the software, double-click to run the application, connect the M5 device to the computer through the data cable, select the port parameters, click **"Burn"** to start burning. (**For M5StickC burning, please Set the baud rate to 750000 or 115200**)
 
-?>3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
+>3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-To get complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/FAN)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/FAN)
 
 ### 2. UIFlow
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/FAN/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/FAN/UIFlow)
 
 <img src="assets/img/product_pics/unit/fan/fan.webp" width="50%" height="50%">
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

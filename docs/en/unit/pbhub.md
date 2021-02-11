@@ -2,7 +2,7 @@
 
 <el-tag effect="plain">SKU:U041</el-tag>
 
-<div class="product_pic"><img src="assets/img/product_pics/unit/pbhub/pbhub_p1.webp"><img src="assets/img/product_pics/unit/pbhub/pbhub_p2.webp"></div>
+<div class="product_pic"><img src="assets/img/product_pics/unit/pbhub/pbhub_p1.webp"></div>
 
 ## Description
 
@@ -40,6 +40,10 @@ Similar to the PaHub Unit, the PbHub provides solution for multiple devices cont
       <td>Parameter</td>
    </tr>
    <tr>
+      <td>Communication protocol</td>
+      <td>I2C: 0x61(can be modified by resistance A0, A1, A2)</td>
+   </tr>
+   <tr>
       <td>Net weight</td>
       <td>7g</td>
    </tr>
@@ -60,7 +64,7 @@ Similar to the PaHub Unit, the PbHub provides solution for multiple devices cont
 
 ## Change I2C Address
 
-The Default I2C address of the unit is 0x61 (which can be changed by using solder resistors A0 ~ A2, the address range is 0x61~0x68).
+The Default I2C address of the unit is 0x61 (which can be changed by using solder resistors A0 ~ A2, the address range is 0x61 ~ 0x68).
 
 <img src="assets/img/product_pics/unit/pbhub/pbhub_i2c_addr.webp" width="300px">
 
@@ -146,15 +150,15 @@ The Default I2C address of the unit is 0x61 (which can be changed by using solde
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-For the complete Arduino IDE code please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/PbHUB)
+For the complete Arduino code please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/PbHUB)
 
 ### 2. UIFlow
 
 For the Complete UIFlow example code please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/PbHUB/UIFlow)
 
-<img src="assets/img/product_pics/unit/pbhub/pbhub.webp" width="50%" height="50%">
+<img src="assets/img/product_pics/unit/pbhub/pbhub.webp" width="80%" height="80%">
 
 - protocol type - I2C     
 - address - 0x61
@@ -191,6 +195,8 @@ For the Complete UIFlow example code please click [here](https://github.com/m5st
     </tr>
 
 </table>
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

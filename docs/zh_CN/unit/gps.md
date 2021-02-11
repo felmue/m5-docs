@@ -27,7 +27,7 @@ UART 参数设置:
 ## 包含
 
 - 1x GPS Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -111,7 +111,7 @@ UART 参数设置:
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE C)</td><td>U2RXD(GPIO16)</td><td>U2TXD(GPIO17)</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT C)</td><td>U2RXD(GPIO16)</td><td>U2TXD(GPIO17)</td><td>5V</td><td>GND</td></tr>
  <tr><td>GPS Unit</td><td>Signal Transmitter (TXD)</td><td>Signal Receiver (RXD)</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -132,22 +132,22 @@ UART 参数设置:
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-- [请点击此处下载Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/GPS_AT6558)
+- [点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/GPS_AT6558)
 
 ### 2. UIFlow
 
-- [点击这里下载UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/GPS)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/GPS)
 
 <img src="assets/img/product_pics/unit/gps/gps.webp">
 
 **分析：**
 
-**$GNRMC,063012.000,A,2234.87140,N,11357.22414,E,0.69,171.74,240419,,,A*7A**
+**$GNRMC,063012.000,A,2257.83953,N,11395.84122,E,0.69,171.74,240419,,,A*7A**
 
 表示定位信息为：
-  UTC时间是06 :30 :12，北纬22.58119°，东经113。95357°，2019年4月24日
+  UTC时间是06 :30 :12，北纬22.57839°，东经113.95841°，2019年4月24日
 
 <img src="assets/img/product_pics/unit/gps/unit_gps_06.webp">
 

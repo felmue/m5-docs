@@ -6,12 +6,14 @@
 
 ## Description
 
-**ANGLE** is a rotary switch Unit,simply having a **10K** potentiometer inside. This unit can be used for Continuous singal dialing control, such as volume, brightness, or motor speed.
+**ANGLE** is a rotary switch Unit which simply includes a **10K** Ohm potentiometer inside. This unit can be used for Continuous signal rotatory control for applications such as volume, brightness, or motor speed.
 
-A potentiometer is a manually adjustable, variable resistor with three terminals. Two terminals are connected to a resistive element, the third terminal is connected to an adjustable wiper. The position of the wiper determines the output voltage.
+A potentiometer is a manually adjustable variable resistor with three terminals: Two terminals are connected to a resistive element, the third terminal is connected to an adjustable wiper. The position of the wiper determines the output voltage.
+
 The out voltage is captured and converted by AD on ESP32 on portB.
 
 *In M5Stack product system, Normally the Grove color indicates the type of communications.*
+
 - Black: Single BUS (AD ,DA ,GPIO)
 - Red: I2C
 - Blue：Uart
@@ -27,15 +29,13 @@ The Unit's Grove interface is black, specify it is an analog interface that shou
 - GROVE interface, support [UIFlow](http://flow.m5stack.com) and [Arduino](http://www.arduino.cc)
 - Two Lego-compatible holes
 
-
 ## Include
 
 - 1x ANGLE Unit
 - 1x Grove Cable
 
-
 ## Specification
-   
+
 <table class="table-1">
     <thead>
       <tr>
@@ -61,7 +61,7 @@ The Unit's Grove interface is black, specify it is an analog interface that shou
             <td>32*24*22mm</td>
         </tr>
         <tr>
-            td>Package Size</td>
+            <td>Package Size</td>
             <td>73*46*30mm</td>
         </tr>
     </tbody>
@@ -108,7 +108,7 @@ The Unit's Grove interface is black, specify it is an analog interface that shou
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
 The code below is incomplete. To get the complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ANGLE)
 
@@ -116,9 +116,11 @@ The code below is incomplete. To get the complete code, please click [here](http
 
 ### 2. UIFlow
 
-If you want the complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ANGLE/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ANGLE/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/ANGLE/example_unit_angle_03.webp">
+
+<el-divider content-position="right">Last updated: 2020-12-10</el-divider>
 
 <script>
 

@@ -8,7 +8,7 @@
 
 **RFID** 是一款射频识别 Unit.内置**MFRC522**芯片，工作频率为13.56MHz.支持读卡、写卡、识别、记录、对RF卡进行编码和授权等多个功能.利用磁场感应技术，实现进行非接触式双向信息交互，读取感应卡的信息并验证.能够运用在门禁系统、打卡系统、仓库货物进存和小区车辆出入登记等需要进行信息验证的应用场景.
 
-该 Unit 通过GROVE A IIC（0x28）与M5Core连接.
+该 Unit 通过PORT A I2C（0x28）与M5Core连接.
 
 ## 产品特性
 
@@ -25,7 +25,7 @@
 ## 包含
 
 - 1x RFID Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 规格参数
 
@@ -33,6 +33,10 @@
    <tr style="font-weight:bold">
       <td>规格</td>
       <td>参数</td>
+   </tr>
+   <tr>
+      <td>通讯协议</td>
+      <td>I2C：0x28</td>
    </tr>
    <tr>
       <td>净重</td>
@@ -77,7 +81,7 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
 [请点击此处下载Arduino示例](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/RFID_RC522)
 
@@ -100,7 +104,7 @@
 ### 管脚映射
 
 <table>
-<tr><td>M5Core ( GROVE A )</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+<tr><td>M5Core ( PORT A )</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>RFID Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 

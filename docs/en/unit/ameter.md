@@ -1,4 +1,4 @@
-# Ammeter Unit{docsify-ignore-all}
+# Ameter Unit{docsify-ignore-all}
 
 <el-tag effect="plain">SKU:U086</el-tag>
 
@@ -6,7 +6,15 @@
 
 ## Description
 
-**Ammeter Unit**  is a current meter that can monitor the current in real time. The 16-bit ADC (analog-to-digital) converter ADS1115 is used internally to communicate through I2C (0X48). In order to ensure the measurement accuracy, there is a built-in DC-DC isolated power supply, and the I2C interface is also electrically isolated through the low-power isolator CA-IS3020S. This prevents noise and surges on the data bus or other circuits from entering the local ground terminal to interfere or damage sensitive circuits. Each Unit is individually calibrated when leaving the factory, with inital Accurancy 0.1%FS, ±1 count, resolution 0.3mA. The unit has a maximum measurement current of ±4A, and an internal integrated 4A fuse to prevent excessive measurement current from burning out the circuit.
+**Ameter Unit** is a current meter that can monitor the current in real time. The 16-bit ADS1115 ADC (analog-to-digital) converter can be used to communicate through I2C protocol (By default the I2C address is 0X48 unless manually modified).
+
+In order to ensure the measurement accuracy, there is a built-in DC-DC isolated power supply.
+
+The I2C interface is also electrically isolated through the low-power isolator module CA-IS3020S, This prevents noise and surges on the data bus or other circuits from entering the local ground terminal to interfere or damage sensitive circuits.
+
+Each Unit is factory calibrated with initial accuracy of 0.1%FS, ±1 count and resolution of 0.3mA.
+
+The unit has a maximum measurement current of ±4A, and an internal integrated 4A fuse to prevent excessive measurement current from burning out the circuit.
 
 >? EEPROM (0x51) has built-in calibration parameters when leaving the factory. Please do not write to the EEPROM, otherwise the calibration data will be overwritten and the measurement results will be inaccurate.
 
@@ -26,15 +34,17 @@
 
 ## Includes
 
-- 1x Ammeter Unit
-- 1x Grove Cable(20cm)
+- 1x Ameter Unit
+- 1x Grove Cable (20cm)
 
 ## Application
 
-- galvanometer
+- galvano-meter
+- electricity monitoring
+- power management monitoring
 
 ## Specification
- 
+
 <table>
    <tr style="font-weight:bold">
       <td>Resources</td>
@@ -45,8 +55,8 @@
       <td>±4A</td>
    </tr>
    <tr>
-      <td>Protocol</td>
-      <td>I2C</td>
+      <td>Communication protocol</td>
+      <td>I2C：0x48</td>
    </tr>
    <tr>
    <td>Net Weight</td>
@@ -68,13 +78,13 @@
 
  ## Measurement Range Gain Setting
 
-**Different range resolution is different, the error value of the result is different, please set the appropriate range according to the needs.Do not write EEPROM.If you really want to save the custom calibration values to EEPROM，Using the following statement, the factory data will be lost once written**
+**There are different range of resolutions, the % of error values for each result might be different as well. please set the appropriate range according to the application needs in order to maximize the accuracy. Do not write the values into the EEPROM, If you'd like to save the custom calibration values to EEPROM，Using the following example, the factory data will be lost (overwritten)**
 
-```Arduino
+<!-- ```Arduino
 
-bool Ammeter::saveCalibration2EEPROM(ammeterGain_t gain, int16_t hope, int16_t actual)
+bool Ameter::saveCalibration2EEPROM(ameterGain_t gain, int16_t hope, int16_t actual)
 
-//@Parameter: ammeterGarin_t gain //Set Gain
+//@Parameter: ameterGarin_t gain //Set Gain
 ###########################################
 # // | PAG      | Max Input Voltage(V) |  #
 # // | PAG_4096 |        64            |  #
@@ -85,20 +95,22 @@ bool Ammeter::saveCalibration2EEPROM(ammeterGain_t gain, int16_t hope, int16_t a
 //@Parameter: int16_t hope  // Set target value
 //@Parameter: int16_t actual //ADC raw value
 
-```
+``` -->
 
-<table>
+<!-- <table>
  <tr><td>ADC1115_Reference calibration</td><td>Calibration current(A)</td><td>Expected reading(int16)</td></tr>
  <tr><td>PGA512(O.512)</td><td>2</td><td>6400</td></tr>
-</table>
+</table> -->
+
+?>Absolute maxium `6A` Do not exceed it, otherwise the equipment will be burnt down.
 
 <table>
- <tr><td>Current measurement range</td><td>Maximum input current(A)</td><td>Power Disspation(W)</td><td>Minimum resolution(mA)</td><td>Gain factor</td></tr>
- <tr><td>4.096</td><td>40.96</td><td>83.88608</td><td>2.5</td><td>0.125</td></tr>
- <tr><td>2.048</td><td>20.48</td><td>20.97152</td><td>1.25</td><td>0.0625</td></tr>
+ <tr><td>Current measurement range</td><td>Maximum input current(A)</td><td>Power dispensation(W)</td><td>Minimum resolution(mA)</td><td>Gain factor</td></tr>
+ <tr><td>PAG_4096(Calibrated)</td><td>±4</td><td>83.88</td><td>2.5</td><td>0.125</td></tr>
+ <!-- <tr><td>2.048</td><td>20.48</td><td>20.97152</td><td>1.25</td><td>0.0625</td></tr>
  <tr><td>1.024</td><td>10.24</td><td>5.24288</td><td>0.625</td><td>0.03125</td></tr>
- <tr><td>0.512</td><td>5.12</td><td>1.31072</td><td>0.3125</td><td>0.015625</td></tr>
- <tr><td>0.256</td><td>2.56</td><td>0.32768</td><td>0.15626</td><td>0.007813</td></tr>
+ <tr><td>0.512</td><td>5.12</td><td>1.31072</td><td>0.3125</td><td>0.015625</td></tr> -->
+ <tr><td>PAG_256(Calibrated)</td><td>±2.56</td><td>0.32768</td><td>0.15626</td><td>0.007813</td></tr>
 </table>
 
 
@@ -129,7 +141,7 @@ bool Ammeter::saveCalibration2EEPROM(ammeterGain_t gain, int16_t hope, int16_t a
 
 ## Related Link
 
--  **Datasheet** 
+-  **Datasheet**
     - [CA-IS3020S](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/CA-IS3020S.pdf)
     - [ADS1115](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/ADS1115.PDF)
 
@@ -146,9 +158,18 @@ bool Ammeter::saveCalibration2EEPROM(ammeterGain_t gain, int16_t hope, int16_t a
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[Click here to download the Arduino example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/A_Meter_Unit)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/A_Meter_Unit)
+
+### 2. UIFlow
+
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/A_Meter_Unit/UIFlow)
+
+<img src="assets/img/product_pics/unit/a_meter/a_meter.webp" width="80%" height="80%">
+
+
+<el-divider content-position="right">Last updated: 2020-12-10</el-divider>
 
 <script>
 

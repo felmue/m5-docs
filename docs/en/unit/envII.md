@@ -6,18 +6,20 @@
 
 ## Description
 
-**ENV II** is an environment sensor which can sense temperature, humidity and atmospheric pressure. It is built with SHT30 and BMP280 sensors and is programmed over I2C. SHT30 is a digital temperature and humidity sensor with high precision and low power consumption. BMP280 is an absolute barometric pressure sensor which is especially designed for mobile applications. It offers the highest flexibility to optimize the device regarding power consumption, resolution and filter performance.
+**ENV II** is an environmental sensor which can sense temperature, humidity and atmospheric pressure. It integrates the SHT30 and BMP280 sensors and is programmed over the I2C protocol(SHT30:0x44, BMP280:0x76).
 
+SHT30 is a digital temperature and humidity sensor with high precision and low power consumption.
+
+BMP280 is an absolute barometric pressure sensor which is especially designed for mobile applications. It offers the highest flexibility to optimize the device regarding power consumption, resolution and filter performance.
 
 ## Product Features
 
 -  High-precision
--  Support IIC
+-  Support I2C
 -  GROVE interface, support [UIFlow](http://flow.m5stack.com) and [Arduino](http://www.arduino.cc)
 -  Two Lego installation holes
 
-
-## Include
+## Includes
 
 - 1x ENV II Unit
 - 1x Grove Cable
@@ -155,7 +157,7 @@
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
 This is an ENV example - implementing reading temperature, humidity and atmospheric pressure function.
 1, Before compiling, please install `Adafruit BMP280 Library`
@@ -165,9 +167,11 @@ The code below is incomplete. To get the complete code, please click [here](http
 
 ### 2. UIFlow
 
-If you want the complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENVII/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENVII/UIFlow)
 
 <img src="assets/img/product_pics/unit/envII/envII_03.webp" width="60%">
+
+<el-divider content-position="right">Last updated: 2020-12-11</el-divider>
 
 <script>
 

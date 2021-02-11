@@ -6,7 +6,7 @@
 
 ## Description
 
-**Barometric Pressure Unit**  is a barometer unit, which uses Bosch bmp280 pressure sensor to measure atmospheric pressure and estimate altitude. The relative accuracy can reach ± 0.12hpa, equivalent to ± 1m height difference. At the same time, the temperature drift coefficient is very low, which can reach 1.5 PA / K, that is, the temperature drift is 12.6 cm / K. in addition, there is an integrated temperature sensor in the chip.
+**Barometric Pressure Unit** is a barometer unit, which integrates the Bosch BMP280 pressure sensor to measure atmospheric pressure and estimate the altitude. The relative accuracy can reach ± 0.12hpa, equivalent to ± 1m height difference. At the same time, the temperature drift coefficient is very low, which can reach 1.5 PA / K, that is, the temperature drift is 12.6 cm / K. in addition, there is an integrated temperature sensor in the chip.
 
 ## Product Features
 
@@ -14,9 +14,9 @@
 - The accuracy is ± 0.12hpa
 - Temperature drift coefficiency 1.5pa/k
 - Supports periodic measurement
-- Internal integrated 5-segment filter
+- Integrated 5-segment filter
 - Support low power consumption
-- Development platform: Arduino, uiflow (Blockly, Python)
+- Development platform: Arduino, UIFlow (Blockly, Python)
 - 2x LEGO™ compatible holes
 
 ## Include
@@ -77,6 +77,10 @@
       <td>1.71V - 3.6V</td>
    </tr>
    <tr>
+      <td>Communication protocol</td>
+      <td>I2C：0x76</td>
+   </tr>
+   <tr>
    <td>Net Weight</td>
       <td>8g</td>
    </tr>-
@@ -96,7 +100,7 @@
 
 ## EasyLoader
 
->EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development), M5StickC/V/T/ATOM series can be used without driver)
+>EasyLoader is a precise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development), M5StickC/V/T/ATOM series can be used without driver)
 
 <div class="easyloader-box">
     <div style="background-color:white;">
@@ -119,9 +123,9 @@
     </div>
 </div>
 
-## Related Link
+## Related Links
 
--  **Datasheet** 
+-  **Datasheet**
     - [BMP 280](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/hat/BMP280-DS001-11_en.pdf)
 
 ## Schematic
@@ -137,9 +141,19 @@
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BPS_Unit)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BPS_Unit)
+
+### 2. UIFlow
+
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BPS_Unit/UIFlow)
+
+<img src="assets/img/
+product_pics/unit/bps/BPS_Example.webp" width="80%" height="80%">
+
+
+<el-divider content-position="right">Last updated: 2020-12-11</el-divider>
 
 <script>
 

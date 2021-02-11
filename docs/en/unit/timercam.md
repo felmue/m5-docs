@@ -9,19 +9,20 @@
 Choose the development platform you want to use, view the corresponding tutorial&quick-Start.
 
 <a href="/#/en/quick_start/timer_cam/quick_start_cameratool"><el-tag effect="plain">Camera-Tool</el-tag></a>
-<a href="/#/en/quick_start/timer_cam/quick_start_uiflow"><el-tag effect="plain">UIFlow</el-tag></a> 
+<a href="/#/en/quick_start/timer_cam/quick_start_uiflow"><el-tag effect="plain">UIFlow</el-tag></a>
 <a href="/#/en/quick_start/timer_cam/quick_start_arduino"><el-tag effect="plain">Arduino</el-tag></a>
 
 ## Description
 
-**Timer Camera** is a camera module based on the ESP32 with 8MB of integrated with PSRAM. The 3 million pixel camera (ov3660) has a field of view of 66.5 ° and can shoot a maximum of 1600 x 1200 resolution photos. There is a LED status indicator and reset button on the board. Timer Camera is designed to have ultra-low power consumption. Through the use of the RTC (BM8563), timing, sleep and wake-up functions can be utilized. 
-In sleep mode, the current consumption of the whole machine is only 2μA. After the scheduled photo taking function(one photo per hour) is turned on, the battery can work continuously for more than one month. The module supports WiFi image transmission and USB port debugging. The bottom HY2.0-4P port output can be connected to other peripherals. In order to facilitate DIY, the battery interface is reserved on the board. Using the M5Burner firmware burning tool, timecam can be set directly with the Camera-Tool, and TimerCamera data can be processed in UIFlow.
+**Timer Camera** is a camera module based on the ESP32 with 8MB of integrated with PSRAM. The 3 million (3MP) pixel camera (ov3660) ,DFOV 66.5 ° and can shoot a maximum of 2048x1536 resolution photos. There is a LED status indicator and reset button on the board. Timer Camera is designed to have ultra-low power consumption. Through the use of the RTC (BM8563), timing, sleep and wake-up functions can be utilized.
+
+In sleep mode, the current consumption of the whole machine is only 2μA. After the scheduled photo taking function(one photo per hour) is turned on, the battery can work continuously for more than one month. The module supports WiFi image transmission and USB port debugging. The bottom HY2.0-4P port output can be connected to other peripherals. In order to facilitate DIY, the battery interface is reserved on the board. Using the M5Burner firmware burning tool, time-cam can be set directly with the Camera-Tool, and TimerCamera data can be processed in UIFlow.
 
 >The low-power power management solution adopted by the Timer Camera series is different from the CORE and StickC devices. When in use, the PWR button is used as a power-on button(long press 2s). If you need to shut down the device, you need to use the software API or press the Reset button on the PCB.
 
 ## Product Features
 
-- Design based on esp32
+- Design based on ESP32
 - WiFi image/video transmission
 - Timed sleep wake up
 - Status indicator
@@ -65,18 +66,18 @@ In sleep mode, the current consumption of the whole machine is only 2μA. After 
       <td>8-/10-Bit RAW, RGB and YCbCr output, compression.</td>
    </tr>
    <tr>
-      <td>Maximum image transmission rate</td>
+      <td>Maximum image transmission rate (OV3660)</td>
       <td>
-         2040x1536: 15fps /
+         2048x1536: 15fps /
          1080p: 20fps /
          720p: 45fps	 /
          XGA(1024x768) : 45fps /
          VGA(640x480) : 60fps /
-         QVGA(320x240) : 120fps 
+         QVGA(320x240) : 120fps
       </td>
    </tr>
    <tr>
-      <td>FOV</td>
+      <td>DFOV</td>
       <td>66.5°</td>
    </tr>
    <tr>
@@ -99,7 +100,7 @@ In sleep mode, the current consumption of the whole machine is only 2μA. After 
 
 ## EasyLoader
 
->EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development), M5StickC/V/T/ATOM series can be used without driver)
+>EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. 
 
 <div class="easyloader-box">
     <div style="background-color:white;">
@@ -151,30 +152,37 @@ In sleep mode, the current consumption of the whole machine is only 2μA. After 
 
 **GROVE Interface**
 
-| *Grove*         | *TimerCamera*  | 
-| :-----------: | :------:  | 
-| SCL           | IO13      | 
+| *Grove*         | *TimerCamera*  |
+| :-----------: | :------:  |
+| SCL           | IO13      |
 | SDA           | IO4       |
 | 5V            | 5V        |
-| GND           | GND       | 
+| GND           | GND       |
 
 **LED Interface**
 
 | *LED*         | *TimerCamera*  |
-| :-----------:| :------:  | 
-| LED_Pin      | IO2     | 
+| :-----------:| :------:  |
+| LED_Pin      | IO2     |
 
 **BAT Interface**
 
 | *BAT*         | *TimerCamera*  |
 | :-----------:| :------:  | 
-| BAT_ADC_Pin     | IO33     | 
+| BAT_ADC_Pin     | IO38     | 
+| BAT_HOLD_Pin     | IO33     | 
 
 ## Related Link
 
-- **datasheet** 
-   - [ESP32](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/esp32_datasheet_cn.pdf) 
+- **datasheet**
+   - [ESP32](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/esp32_datasheet_cn.pdf)
    - [OV3660](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/OV3660_CSP3_DS_1.3_sida.pdf)
+
+## Schematic
+
+[TimerCAM_A1-ESP32_SUBSYS](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/TimerCAM/TimerCAM_A1-ESP32_SUBSYS.pdf)
+
+[TimerCAM_A2-PMS_UART](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/TimerCAM/TimerCAM_A2-PMS_UART.pdf)
 
 ## Example
 
@@ -196,7 +204,15 @@ In sleep mode, the current consumption of the whole machine is only 2μA. After 
 
 **[Use HTTP Cloud Image Interface Service-UIFlow](en/quick_start/timer_cam/quick_start_uiflow) to get pictures**
 
-**[Use Arduino IDE](en/quick_start/timer_cam/quick_start_arduino) development**
+**[Use Arduino](en/quick_start/timer_cam/quick_start_arduino) development**
+
+## Video
+
+<video class="video_size" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Unit/TimerCAM.mp4" type="video/mp4">
+</video>
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

@@ -8,11 +8,11 @@
 
 **M5:bit**
 
-是一款M5Core-Microbit串口通信转接板，该转接板将Microbit的串口引脚连接至GROVE接口，用于与M5Core之间进行串口通信，或是其他应用.并将其余IO接口拓展引出，使用杜邦线就能与各种各样的硬件进行连接.
+是一款M5Core-Microbit串口通信转接板，该转接板将Microbit的串口引脚连接至HY2.0-4P接口，用于与M5Core之间进行串口通信，或是其他应用.并将其余IO接口拓展引出，使用杜邦线就能与各种各样的硬件进行连接.
 
 **注意：**
 
-**默认将Microbit引脚P8（TX）、P12（RX）连接至GROVE接口.** 
+**默认将Microbit引脚P8（TX）、P12（RX）连接至HY2.0-4P接口.** 
 
 ## 产品特性
 
@@ -54,7 +54,7 @@
 
 <img src="assets/img/product_pics/unit/m5bit/m5bit.webp">
 
-### Arduino IDE
+### Arduino
 
 [请点击此处获取Arduino示例](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/M5BIT)
 

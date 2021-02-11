@@ -6,14 +6,14 @@
 
 ## Description
 
-**Ultrasonic** is an ultrasonic distance measuring sensor unit, with the capability of simultaneous reception and transmission. The ultrasonic probe has a sound frequency of 40KHz, a direction angle of ±20 ° and an accuracy of 1mm. The internal part is calculated by an RCWL-9600 ultrasonic distance measuring chip, and the measurement results can be directly obtained through IIC interface (0x57). The effective distance is 20-1500mm.
+**Ultrasonic** is an ultrasonic distance measuring sensor unit, with the capability of simultaneous reception and transmission. The ultrasonic probe has a sound frequency of 40KHz, a direction angle of ±20 ° and an accuracy of 1mm. The internal part is calculated by an RCWL-9600 ultrasonic distance measuring chip, and the measurement results can be directly obtained through I2C interface (0x57). The effective distance is 20-1500mm.
 
 ## Product Features
 
 - Split transceiver
-- Effective distance 20-1500mm
+- 20-1500mm distance effectiveness
 - Wide angle range
-- IIC communication, result output directly
+- I2C communication, result output directly
 
 ## Includes
 
@@ -35,6 +35,10 @@
    <tr>
       <td>Ranging chip</td>
       <td>RCWL-9600</td>
+   </tr>
+   <tr>
+      <td>Communication protocol</td>
+      <td>I2C：0x57</td>
    </tr>
    <tr>
       <td>Measuring distance</td>
@@ -99,19 +103,34 @@
     </div>
 </div>
 
+## PinMap
+
+<table>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>Ultrasonic Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
+</table>
+
 ## Related Link
 
-  - **[Ceramic Ultrasonic Sensor TC40-10T/R](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/TC40-10T-R.pdf)**
+- **[Ceramic Ultrasonic Sensor TC40-10T/R](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/TC40-10T-R.pdf)**
 
 ## Example
 
-### Arduino
+### 1. Arduino
 
-- Click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ULTRA) to download code
+- Click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ULTRA/Arduino/ULTRA) to download code
+
+### 2. UIFlow
+
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ULTRA/UIFlow)
+
+<img src="assets/img/product_pics/unit/sonic/ULTRA.webp" width="80%" height="80%">
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 
-   var purchase_link = '';
+   var purchase_link = 'https://m5stack.com/products/ultrasonic-distance-unit-rcwl-9600';
 
    anchor_search(purchase_link);
    scrollFunc();

@@ -6,7 +6,7 @@
 
 ## 描述
 
-**ENV Hat**是一款兼容M5SticKC的多功能环境传感器，内部集成DHT12、BMP280和BMM150，能够检测温度、湿度、大气压值、三轴磁力计数据,该模块采用的统一的I2C协议接口，因此在引脚上没有过多的占用.对于希望同时拥有精致体积与丰富功能的项目来说，**ENV Hat**是一个不错的选择.
+**ENV HAT**是一款兼容M5SticKC的多功能环境传感器，内部集成DHT12、BMP280和BMM150，能够检测温度、湿度、大气压值、三轴磁力计数据,该模块采用的统一的I2C协议接口，因此在引脚上没有过多的占用.对于希望同时拥有精致体积与丰富功能的项目来说，**ENV Hat**是一个不错的选择.
 
 ## 产品特性
 
@@ -107,13 +107,13 @@
 
 ## 案例程序
 
-- **UIFlow**
+### 2. UIFlow
 
 打开 http://flow.m5stack.com 点击Demo载入UIFlow例程
 
 <img src="assets/img/product_pics/hat/env_hat/env.webp">
 
-- **Arduino IDE**
+### 1. Arduino
 
 [点击此处](https://github.com/m5stack/M5StickC/tree/master/examples/Hat/ENV)，获取完整程序.
 

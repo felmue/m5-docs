@@ -9,12 +9,12 @@
 Choose the development platform you want to use, view the corresponding tutorial&quick-Start.
 
 <a href="/#/en/quick_start/timer_cam/quick_start_cameratool"><el-tag effect="plain">Camera-Tool</el-tag></a>
-<a href="/#/en/quick_start/timer_cam/quick_start_uiflow"><el-tag effect="plain">UIFlow</el-tag></a> 
+<a href="/#/en/quick_start/timer_cam/quick_start_uiflow"><el-tag effect="plain">UIFlow</el-tag></a>
 <a href="/#/en/quick_start/timer_cam/quick_start_arduino"><el-tag effect="plain">Arduino</el-tag></a>
 
 ## Description
 
-The **Timer Camera F** is a fisheye camera module based on ESP32-D0WDQ6-V3 with 8M PSRAM and 4M Flash on board. 3.0 megapixel camera (OV3660) with a 120° viewing angle and a maximum resolution of 1600 x 1200 photos can be captured. The camera features an ultra-low-power design, and the internal integrated RTC (BM8563) draws out the IRQ signal, which can be used for sleep and timer wake-up (sleep current down to 2μA). The built-in 270mAh battery provides more than one month of battery life with timed pictures (one per hour) enabled. The module supports WiFi image transfer and USB port debugging, and the HY2.0-4P output on the bottom can be used to expand other peripherals. The on-board LED status indicator and reset button facilitate program development and debugging. In terms of application, M5Stack provides a number of simple and efficient application development methods and interfaces for the TimerCAM series, making it easy for users to use and develop their applications. (including PC/Mobile photo shooting APP, cloud image HTTP interface for timer shooting, cloud AI recognition interface (not online yet), etc.)
+The **Timer Camera F** is a fisheye camera module based on ESP32-D0WDQ6-V3 with 8M PSRAM and 4M Flash on board. 3.0 megapixel camera (OV3660) with DFOV 120° and a maximum resolution of 2048x1536 photos can be captured. The camera features an ultra-low-power design, and the internal integrated RTC (BM8563) draws out the IRQ signal, which can be used for sleep and timer wake-up (sleep current down to 2μA). The built-in 270mAh battery provides more than one month of battery life with timed pictures (one per hour) enabled. The module supports WiFi image transfer and USB port debugging, and the HY2.0-4P output on the bottom can be used to expand other peripherals. The on-board LED status indicator and reset button facilitate program development and debugging. In terms of application, M5Stack provides a number of simple and efficient application development methods and interfaces for the TimerCAM series, making it easy for users to use and develop their applications. (including PC/Mobile photo shooting APP, cloud image HTTP interface for timer shooting, cloud AI recognition interface (not online yet), etc.)
 
 >The low-power power management solution adopted by the Timer Camera series is different from the CORE and StickC devices. When in use, the PWR button is used as a power-on button(long press 2s). If you need to shut down the device, you need to use the software API or press the Reset button on the PCB.
 
@@ -76,18 +76,18 @@ The **Timer Camera F** is a fisheye camera module based on ESP32-D0WDQ6-V3 with 
       <td>8-/10-Bit RAW, RGB and YCbCr output, compression.</td>
    </tr>
    <tr>
-      <td>Maximum image transmission rate</td>
+      <td>Maximum image transmission rate (OV3660)</td>
       <td>
-         2040x1536: 15fps /
+         2048x1536: 15fps /
          1080p: 20fps /
          720p: 45fps	 /
          XGA(1024x768) : 45fps /
          VGA(640x480) : 60fps /
-         QVGA(320x240) : 120fps 
+         QVGA(320x240) : 120fps
       </td>
    </tr>
    <tr>
-      <td>FOV</td>
+      <td>DFOV</td>
       <td>120°</td>
    </tr>
    <tr>
@@ -110,7 +110,7 @@ The **Timer Camera F** is a fisheye camera module based on ESP32-D0WDQ6-V3 with 
 
 ## EasyLoader
 
->EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development), M5StickC/V/T/ATOM series can be used without driver)
+>EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification.
 
 <div class="easyloader-box">
     <div style="background-color:white;">
@@ -162,31 +162,37 @@ The **Timer Camera F** is a fisheye camera module based on ESP32-D0WDQ6-V3 with 
 
 **GROVE Interface**
 
-| *Grove*         | *TimerCamera*  | 
-| :-----------: | :------:  | 
-| SCL           | IO13      | 
+| *Grove*         | *TimerCamera*  |
+| :-----------: | :------:  |
+| SCL           | IO13      |
 | SDA           | IO4       |
 | 5V            | 5V        |
-| GND           | GND       | 
+| GND           | GND       |
 
 **LED Interface**
 
 | *LED*         | *TimerCamera*  |
-| :-----------:| :------:  | 
-| LED_Pin      | IO2     | 
+| :-----------:| :------:  |
+| LED_Pin      | IO2     |
 
 **BAT Interface**
 
 | *BAT*         | *TimerCamera*  |
 | :-----------:| :------:  | 
-| BAT_ADC_Pin     | IO33     | 
+| BAT_ADC_Pin     | IO38     | 
+| BAT_HOLD_Pin     | IO33     | 
 
 ## Related Link
 
-- **datasheet** 
-   - [ESP32](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/esp32_datasheet_en.pdf) 
+- **datasheet**
+   - [ESP32](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/esp32_datasheet_en.pdf)
    - [OV3660](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/OV3660_CSP3_DS_1.3_sida.pdf)
 
+## Schematic
+
+[TimerCAM_A1-ESP32_SUBSYS](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/TimerCAM/TimerCAM_A1-ESP32_SUBSYS.pdf)
+
+[TimerCAM_A2-PMS_UART](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/TimerCAM/TimerCAM_A2-PMS_UART.pdf)
 
 ## Example
 
@@ -208,7 +214,15 @@ The **Timer Camera F** is a fisheye camera module based on ESP32-D0WDQ6-V3 with 
 
 **[Use HTTP Cloud Image Interface Service-UIFlow](en/quick_start/timer_cam/quick_start_uiflow) to get pictures**
 
-**[Use Arduino IDE](en/quick_start/timer_cam/quick_start_arduino) development**
+**[Use Arduino](en/quick_start/timer_cam/quick_start_arduino) development**
+
+## Video
+
+<video class="video_size" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Unit/TimerCAM.mp4" type="video/mp4">
+</video>
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

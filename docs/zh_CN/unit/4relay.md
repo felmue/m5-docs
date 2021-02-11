@@ -18,7 +18,7 @@
 ## 包含
 
 - 1x 4-Relay Unit
-- 1x Grove 线(20cm)
+- 1x HY2.0-4P线缆(20cm)
 - 4x VH3.96-4P接线端子
 
 ## 应用
@@ -47,7 +47,7 @@
    </tr>
    <tr>
       <td>通讯方式</td>
-      <td>IIC(0x26)</td>
+      <td>I2C(0x26)</td>
    </tr>
    <tr>
       <td>净重</td>
@@ -100,15 +100,15 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>SDA(GPIO21)</td><td>SCL(GPIO22)</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>SDA(GPIO21)</td><td>SCL(GPIO22)</td><td>5V</td><td>GND</td></tr>
  <tr><td>4-relay Unit</td><td>SDA</td><td>SCL</td><td>5V</td><td>GND</td></tr>
 </table>
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[点击这里获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/4-RELAY)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/4-RELAY)
 
 <script>
 

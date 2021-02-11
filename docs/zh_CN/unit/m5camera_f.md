@@ -21,7 +21,7 @@
 
 <img src="assets/img/product_pics/unit/unit_m5camera_f_04.webp" width="50%">
 
-因为模块可以生成 WIFI 热点 AP，所以可以用手机、PC 或其他设备通过 WIFI 无线获取摄像头图片，也可以通过模块的 GROVE 接口有线获取摄像头图片。
+因为模块可以生成 WIFI 热点 AP，所以可以用手机、PC 或其他设备通过 WIFI 无线获取摄像头图片，也可以通过模块的 HY2.0-4P 接口有线获取摄像头图片。
 
 ## 产品特性
 
@@ -132,9 +132,9 @@
 | Power Supply 3.3V     | 3V3      | 3V3       |
 | Ground                | GND      | GND       |
 
-**GROVE 接口**
+**HY2.0-4P 接口**
 
-| *Grove*         | *M5CameraF*  |
+| *HY2.0-4P*         | *M5CameraF*  |
 | :-----------: | :------:  |
 | SCL           | IO13      |
 | SDA           |    IO4    |
@@ -151,7 +151,7 @@
 
 **BME280 接口**
 
-*IIC 地址是 0x76*
+*I2C 地址是 0x76*
 
 | *BME280*         | *M5CameraF*  |
 | :-----------: | :------:  |
@@ -160,7 +160,7 @@
 
 **MPU6050 接口**
 
-*IIC 地址是 0x68*
+*I2C 地址是 0x68*
 
 | *MPU6050*         | *M5CameraF*  |
 | :-----------: | :------:  |

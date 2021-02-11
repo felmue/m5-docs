@@ -6,9 +6,12 @@
 
 ## Description
 
-**ENV** is a environment sensor, can be used for temperature, humidity, and atmospheric pressure measurement. Build with DHT12 and BMP280.
+**ENV** is a environmental sensor, can be used for temperature, humidity, and atmospheric pressure measurement.
 
-DHT12 is a upgradation version of DHT11 humidity temperature sensor, fully downward compatible, more precise and add I2C interface.
+The ENV sensor integrates DHT12 and BMP280 sensors.
+
+DHT12 is an upgraded version of DHT11 humidity temperature sensor: complete downward compatibility, higher precision and added I2C interface.
+
 BMP280 is an absolute barometric pressure sensor especially designed for mobile applications, offers highest flexibility to optimize the device regarding power consumption, resolution and filter performance.
 
  **I2C address:DHT12(0x5C)、BMP280(0x76)**
@@ -73,7 +76,7 @@ BMP280 is an absolute barometric pressure sensor especially designed for mobile 
 </table>
 
 
-## Related Link
+## Related Links
 
 - **[BMP280 library](https://github.com/adafruit/Adafruit_BMP280_Library)**
 
@@ -121,19 +124,22 @@ BMP280 is an absolute barometric pressure sensor especially designed for mobile 
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-This is a ENV example, implemented reading temperature, humidity and atmospheric pressure function.
-1, Before compiling, please install `Adafruit BMP280 Library`
-2, copy `Adafruit_Sensor.h` to `C:\Users\<user_name>\Documents\Arduino\libraries\Adafruit_BMP280_Library`
+This is a ENV example, implemented with reading temperature, humidity and atmospheric pressure functionalities.
+
+1. Before compiling, please install `Adafruit BMP280 Library`
+2. copy `Adafruit_Sensor.h` to `C:\Users\<user_name>\Documents\Arduino\libraries\Adafruit_BMP280_Library`
 
 The code below is incomplete. To get the complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ENV_DHT12_BMP280)
 
 ### 2. UIFlow
 
-If you want the complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENV/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ENV/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/ENV/example_unit_env_05.webp" width="60%">
+
+<el-divider content-position="right">Last updated: 2020-12-11</el-divider>
 
 <script>
 

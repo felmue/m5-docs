@@ -6,21 +6,24 @@
 
 ## Description
 
-**NCIR** featured with built-in infrared sensor **MLX90614**. It can be used to measure the surface temperature of a human body or other object.<br>
+**NCIR** featured with built-in infrared **MLX90614** sensor， It can be used to measure the surface temperature of a human body or other object.<br>
 
-Unlike most temperature sensors, this sensor measures infrared light bouncing off of remote objects so it can sense temperature without having to touch them physically. Simply point the sensor towards what you want to measure and it will detect the temperature by absorbing IR waves emitted. Because it doesn't have to touch the object it's measuring, it can sense a wider range of temperatures than most digital sensors! It takes the measurement over an 90-degree field of view so it can be handy for determining the average temperature of an area.<br>
-The MLX90614 is factory calibrated in wide temperature ranges: -40 to 125 ˚C for the ambient temperature and -70 to 380 ˚C for the object temperature. 
+Unlike most temperature sensors, this sensor measures infrared light bouncing off of remote objects so it can sense temperature without having to touch them physically.
 
-Connect with M5Core via GROVE A IIC(0x5A).
+Simply point the sensor towards what you want to measure and it will detect the temperature by absorbing IR waves emitted. Because it doesn't have to touch the object it's measuring, it can sense a wider range of temperatures than most digital sensors! It takes the measurement over an 90-degree field of view so it can be handy for determining the average temperature of an area.
+<br>
+The MLX90614 is factory calibrated in wide temperature ranges: -40 to 125 ˚C for the ambient temperature and -70 to 380 ˚C for the object temperature.
+
+Connect with M5Core via GROVE A I2C(0x5A).
 
 ## Product Features
 
 - Operating voltage: 4.5 to 5.5V
 - Measuring object temperature range: -70°C ~ 380°C
-- Measuring ambient temperature range: -40 to 125 ˚C 
+- Measuring ambient temperature range: -40 to 125 ˚C
 - Measurement accuracy at room temperature: ±0.5°C
 - Field of view: 90°
-- Sofrware Development Platform: Arduino, UIFlow(Blockly, Python)
+- Software Development Platform: Arduino, UIFlow (Blockly, Python)
 - Two Lego-compatible holes
 
 ## Include
@@ -40,6 +43,10 @@ Connect with M5Core via GROVE A IIC(0x5A).
    <tr style="font-weight:bold">
       <td>Resources</td>
       <td>Parameter</td>
+   </tr>
+   <tr>
+      <td>Communication protocol</td>
+      <td>I2C：0x5A</td>
    </tr>
    <tr>
       <td>Net weight</td>
@@ -99,19 +106,21 @@ Connect with M5Core via GROVE A IIC(0x5A).
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-The code below is incomplete. TO get complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/NCIR_MLX90614)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/NCIR_MLX90614)
 
 ### 2. UIFlow
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/NCIR/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/NCIR/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/NCIR/example_unit_ncir_03.webp">
 
 ## Schematic
 
 <img src="assets/img/product_pics/unit/ncir_sch.JPG">
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

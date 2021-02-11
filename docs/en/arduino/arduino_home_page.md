@@ -1,4 +1,4 @@
-<div class="container uiflow_banner">
+<div class="uiflow_banner">
     <div>
       <img src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/m5-docs_homepage/home_page/arduino_home_page.webp">
     </div>
@@ -29,7 +29,7 @@
 <script>
 
 const quickstart = {
-  'title':"Quick Start",
+  'title':"Quick Start/Development environment setup tutorial",
   'item':{
     'BASIC / M5GO / FIRE / FACES':'#/en/arduino/arduino_development',
     'M5StickC':'#/en/arduino/arduino_development',
@@ -103,6 +103,14 @@ const m5paper_api = {
   "id":"m5paper_api"
 };
 
+const tough_api = {
+  'title':"M5Tough API",
+  'item':{
+    'TOUCH':'#/en/api/tough/touch'
+  },
+  "id":"tough_api"
+};
+
 var arduino_home_page = new Vue({
     el:'#arduino_home_page',
     data() {
@@ -113,7 +121,8 @@ var arduino_home_page = new Vue({
             m5stickc_api: m5stickc_api,
             m5core2_api: m5core2_api,
             coreink_api: coreink_api,
-            m5paper_api: m5paper_api
+            m5paper_api: m5paper_api,
+            tough_api: tough_api
           }
       };
     }

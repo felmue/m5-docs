@@ -6,9 +6,9 @@
 
 ## Description
 
-**GoPlus2**  is a stackable multi-functional motor and servo control module. The master control adopts STM32F030C8T6. The module is equipped with 2-way DC motor drive interface and 4-way servo drive interface. Three PORT-B interfaces(Analog Input,Digital Output,Digital Input) can be expanded. Built-in 500mAh battery and support infrared (IR) transmission and receive. In order to meet the requirements of multi-channel interface power supply at the same time, a DC power interface is provided for external power supply, battery can be charged through the M5Core with USB-C.
+**GoPlus2**  is a stackable multi-functional motor and servo control module. The master control integrates the STM32F030C8T6 chipset. The module is equipped with 2-way DC motor drive interface and 4-way servo drive interface. Three PORT-B interfaces(Analog Input,Digital Output,Digital Input) can be expanded. Built-in 500mAh battery and support infrared (IR) transmission and receive. In order to meet the requirements of multi-channel interface power supply at the same time, a DC power interface is provided for external power supply, battery can be charged through the M5Core with USB-C.
 
-Communication protocol: IIC(0x38)
+Communication protocol: I2C(0x38)
 
 ### Product Features
 
@@ -78,7 +78,7 @@ Communication protocol: IIC(0x38)
 
 ## EasyLoader
 
->EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development), M5StickC/V/T/ATOM series can be used without driver)
+>EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development)
 
 <div class="easyloader-box">
     <div style="background-color:white;">
@@ -115,7 +115,7 @@ Communication protocol: IIC(0x38)
 
 ## Related Link
 
-- Protocol Manual 
+- Protocol Manual
     - **[GoPlus2 I2C Protocol](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/GO%20PLUS2%20Guide.docx)**
 
 ## Example
@@ -124,9 +124,11 @@ Communication protocol: IIC(0x38)
 
 To get example code, please [click here to download](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Module/GoPLUS2)
 
+<el-divider content-position="right">Last updated: 2021-1-22</el-divider>
+
 <script>
 
-   var purchase_link = '';
+   var purchase_link = 'https://m5stack.com/collections/m5-module/products/goplus2-dc-motor-and-servo-driver-module-stm32f0';
 
    anchor_search(purchase_link);
    scrollFunc();

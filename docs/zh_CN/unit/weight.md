@@ -12,7 +12,7 @@
 
 <img src="assets/img/product_pics/unit/unit_weight_03.webp">
 
-### 产品特性
+## 产品特性
 
 - 两路可选差分输入通道
 - 片内低噪声可编程放大器，可选增益32, 64 and 128
@@ -31,12 +31,12 @@
 - 开发平台: Arduino, UIFlow(Blockly, Python)
 - 2x LEGO 兼容孔
 
-## 套件清单
+## 包含
 
 - 1x WEIGHT Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
-### 应用
+## 应用
 
 - 微型重量计
 - 厨房秤
@@ -92,7 +92,7 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
 该案例使用10Kg量程的传感器.(单位:克)
 
@@ -112,24 +112,24 @@
 
 ### 管脚映射
 
-**WEIGHT 连接到 GROVE A**
+**WEIGHT 连接到 PORT A**
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>WEIGHT Unit</td><td>DATA Pin (DAT)</td><td>CLOCK Pin (CLK)</td><td>5V</td><td>GND</td></tr>
 </table>
 
-**WEIGHT 连接到  GROVE B**
+**WEIGHT 连接到  PORT B**
 
 <table>
-<tr><td>M5Core(GROVE B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
+<tr><td>M5Core(PORT B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
  <tr><td>WEIGHT Unit</td><td>DATA Pin (DAT)</td><td>CLOCK Pin (CLK)</td><td>5V</td><td>GND</td></tr>
 </table>
 
-**WEIGHT 连接到 GROVE C**
+**WEIGHT 连接到 PORT C**
 
 <table>
-<tr><td>M5Core(GROVE C)</td><td>GPIO16</td><td>GPIO17</td><td>5V</td><td>GND</td></tr>
+<tr><td>M5Core(PORT C)</td><td>GPIO16</td><td>GPIO17</td><td>5V</td><td>GND</td></tr>
  <tr><td>WEIGHT Unit</td><td>DATA Pin (DAT)</td><td>CLOCK Pin (CLK)</td><td>5V</td><td>GND</td></tr>
 </table>
 

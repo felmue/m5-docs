@@ -6,7 +6,7 @@
 
 ## Description
 
-**ACCEL** is a motion sensor Unit. Integrated with ADXL 345 and ACC it is able to obtain 3-axis of Acceleration. ADXL 345 is a small, thin, ultra-low power consumption 3-axis accelerometer with high resolution (13-bit) measurement at up to ±16 g. Digital output data is formatted as 16-bit twos complement and it is accessible through I2C digital interface. In this Unit, we used I2C series interface.
+**ACCEL** is a motion sensor Unit. Integrated with ADXL 345 and ACC it is able to obtain 3-axis of Acceleration. ADXL 345 is a small, thin, ultra-low power consumption 3-axis accelerometer with high resolution (13-bit) measurement at up to ±16 g. Digital output data is formatted as 16-bit twos complement and it is accessible through I2C(addr:0x53) digital interface. In this Unit, we used I2C series interface.
 <br>
 
 *What is an accelerometer?*<br>
@@ -27,8 +27,7 @@ By measuring the amount of static acceleration, due to gravity, you can find out
 - I2C digital interface
 - Wide temperature range
 
-
-## Include
+## Includes
 
 - 1x ACC unit
 - 1x GROVE Cable
@@ -52,6 +51,10 @@ By measuring the amount of static acceleration, due to gravity, you can find out
         <tr>
             <td> Measurement range </td>
             <td> ± 16g </td>
+        </tr>
+        <tr>
+            <td>Communication protocol</td>
+            <td>I2C：0x53</td>
         </tr>
         <tr>
             <td> Resolution </td>
@@ -113,19 +116,21 @@ By measuring the amount of static acceleration, due to gravity, you can find out
 
 >2. After downloading the software, double-click to run the application, connect the M5 device to the computer through the data cable, select the port parameters, click **"Burn"** to start burning. (**For M5StickC burning, please Set the baud rate to 750000 or 115200**)
 
-?> 3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
+> 3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-To get complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ACCEL_ADXL345)(Download library ADXL345 before compile)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/ACCEL_ADXL345)(Download library ADXL345 before compile)
 
 ### 2. UIFlow
 
-- [Click here to get UIFlow complete code](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ACCEL/UIFLOW)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/ACCEL/UIFLOW)
 
 <img src="assets/img/product_pics/unit/accel/ACCEL_05.webp">
+
+<el-divider content-position="right">Last updated: 2020-12-11</el-divider>
 
 <script>
 

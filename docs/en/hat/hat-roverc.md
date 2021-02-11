@@ -40,6 +40,10 @@
       <td>Parameter</td>
    </tr>
    <tr>
+      <td>I2C Address</td>
+      <td>0x38</td>
+   </tr>
+   <tr>
       <td>Net weight</td>
       <td>213g</td>
    </tr>
@@ -91,7 +95,7 @@ MotorControl：
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
 Use with JoyC HAT, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Hat/RoverC)
 

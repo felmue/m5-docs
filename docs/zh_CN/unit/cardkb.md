@@ -8,7 +8,7 @@
 
 **CardKB** 是一款功能齐全的QWERTY键盘.如果你想要实现一些复杂的键盘输入交互,仅仅依靠M5Core上的3个按键恐怕有些难度.面对这一难题 CardKB ，横空出世.
 
-使用 CardKB Unit 不仅能够实现全键盘输入，还支持多种按键组合（Sym + Key，Shift + Key，Fn + Key）输出更丰富的键值.该 Unit 通过GROVE A端口（IIC接口）与M5Core通信. I2C地址为0x5F.
+使用 CardKB Unit 不仅能够实现全键盘输入，还支持多种按键组合（Sym + Key，Shift + Key，Fn + Key）输出更丰富的键值.该 Unit 通过PORT A端口（IIC接口）与M5Core通信. I2C地址为0x5F.
 
 **1. 按钮组合说明:**
 
@@ -25,12 +25,12 @@
 ## 产品特性
 
 - 全键盘输入，多种按键组合.
-- GROVE 接口, 支持 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc)
+- HY2.0-4P 接口, 支持 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc)
 
 ## 包含
 
 - 1x CardKB Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -53,7 +53,7 @@
    </tr>
    <tr>
       <td>通讯方式</td>
-      <td>IIC</td>
+      <td>I2C</td>
    </tr>
    <tr>
       <td>净重</td>
@@ -96,21 +96,21 @@
 <img src="assets\img\product_pics\app\mega328_isp.webp" width="30%" height="30%">
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>CardKB</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-- [请点击此处获取Arduino代码](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/CardKB)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/CardKB)
 
 <img src="assets/img/product_pics/unit/unit_example/CARDKB/example_unit_cardkb_01.webp" width="80%" height="80%">
 
 ### 2. UIFlow
 
-- [请点击此处获取UIFlow](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/CARDKB/UIFlow)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/CARDKB/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/CARDKB/example_unit_cardkb_02.webp">
 

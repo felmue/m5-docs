@@ -12,7 +12,7 @@
 ## 产品特性
 
 - TVOC与eCO2浓度检测
-- I2C通讯(0X58)
+- I2C通讯(0x58)
 - 读数稳定
 - 具备片上湿度补偿功能
 - 2x LEGO 兼容孔
@@ -52,7 +52,7 @@
         </tr>
         <tr>
             <td>通信协议</td>
-            <td>I2C：</td>
+            <td>I2C：0x58</td>
         </tr>
         <tr>
             <td>净重</td>
@@ -107,7 +107,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
  <tr><td>TVOC Unit</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -124,9 +124,15 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[请点击此处下载Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/TVOC)
+- [点击此处获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/TVOC)
+
+### 2. UIFlow
+
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/TVOC/UIFlow)
+
+<img src="assets/img/product_pics/unit/tvoc/TVOC_eCO2_Example.webp" width="80%" height="80%">
 
 <script>
 

@@ -32,6 +32,10 @@
       <td>参数</td>
    </tr>
    <tr>
+      <td>IP5209 I2C地址</td>
+      <td>0x75</td>
+   </tr>
+   <tr>
       <td>净重</td>
       <td>55g</td>
    </tr>
@@ -51,7 +55,7 @@
 
 ## 通信协议
 
-<mark>IP5209 I2C地址: 0x75</mark>
+<mark></mark>
 
 ## 参考文档
 
@@ -68,13 +72,13 @@
 
 ## 案例程序
 
-- **UIFlow**
+### 2. UIFlow
 
 UIFlow代码点击这里[下载](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Hat/PowerC/UIFlow)
 
 <img src="assets\img\product_pics\hat\PowerC_hat\PowerC.webp" width="30%">
 
-- **Arduino**
+### 1. Arduino
 
 获取完整代码[点击这里](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Hat/PowerC/PowerC)
 

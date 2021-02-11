@@ -18,7 +18,7 @@
 ## 套件清单
 
 - 1x FAN unit
-- 1x GROVE 线
+- 1x HY2.0-4P线缆
 - 2x 螺旋桨
 
 ## 应用
@@ -68,15 +68,15 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
 [点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/FAN)
 
 ### 2. UIFlow
 
-<img src="assets/img/product_pics/unit/fan/fan.webp" width="50%" height="50%">
+<img src="assets/img/product_pics/unit/fan/fan.webp" width="80%" height="80%">
 
-[点击此处获取UIFLow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/FAN)
+[请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/FAN)
 
 
 <script>

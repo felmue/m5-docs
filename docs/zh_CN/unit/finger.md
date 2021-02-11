@@ -29,7 +29,7 @@ UART 参数设置:
 ## 包含
 
 - 1x FINGER Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -126,7 +126,7 @@ UART 参数设置:
 ### 管脚映射
 
 <table>
-<tr><td>M5Core(GROVE C)</td><td>U2RXD</td><td>U2TXD</td><td>5V</td><td>GND</td></tr>
+<tr><td>M5Core(PORT C)</td><td>U2RXD</td><td>U2TXD</td><td>5V</td><td>GND</td></tr>
  <tr><td>FINGER Unit</td><td>TXD</td><td>RXD</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -136,15 +136,16 @@ UART 参数设置:
 
 ## 案例程序
 
-- **UIFlow**
+### 1. Arduino
 
-- [请点击此处下载UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/FINGER/UIFlow)
+- [点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/FINGER_FPC1020A)
+
+### 2. UIFlow
+
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/FINGER/UIFlow)
 
 <img src="assets/img/product_pics/unit/fingerprint.webp">
 
-### Arduino IDE
-
-- [请点击此处下载Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/FINGER_FPC1020A)
 
 ## 相关视频
 

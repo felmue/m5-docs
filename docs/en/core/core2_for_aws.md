@@ -2,39 +2,52 @@
 
 <el-tag effect="plain">SKU:K010-AWS</el-tag>
 
-<div class="product_pic"><img class="pic" src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/%E4%B8%B4%E6%97%B6%E6%96%87%E4%BB%B6/core2_1.jpg"><img class="pic" src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/%E4%B8%B4%E6%97%B6%E6%96%87%E4%BB%B6/core2_2.jpg"></div>
+<div class="product_pic"><img class="pic" src="assets/img/product_pics/core/core2_aws/core2_aws_01.webp"><img class="pic" src="assets/img/product_pics/core/core2_aws/core2_aws_02.webp"></div>
+
+## Tutorial&Quick-Start
+
+Choose the development platform you want to use, view the corresponding tutorial&quick-Start.
+
+<a href="https://edukit.workshop.aws"><el-tag effect="plain">FreeRTOS</el-tag></a>
+<a href="/#/en/quick_start/core2/m5stack_core2_get_started_MicroPython"><el-tag effect="plain">UIFlow</el-tag></a>
+<a href="/#/en/arduino/arduino_core2_development"><el-tag effect="plain">Arduino</el-tag></a>
 
 ## Description
 
-**Core2 for AWS** is an exclusive kit for IoT learning program - AWS IoT eduKIT. It remains all features of **M5Stack Core2** and **M5GO-Bottom For AWS**, adding with secure element - ATECC608A, which would be an ideal toolkit for IoT learning and secured projects building.
+**Core2 for AWS** is the reference hardware kit for AWS IoT EduKit – a prescriptive learning program from AWS which makes it easy and cost effective to learn how to build IoT applications using AWS services. It comes equipped with a Microchip ATECC608 [Trust&GO](https://www.microchip.com/design-centers/security-ics/trust-platform/trust-go)   pre-provisioned secure element, in addition to the existing features of the standard M5Stack Core2 and M5GO Bottom2. The Core2 for AWS is a feature rich, plug and play extensible, and secure hardware kit for learning and building a wide range of IoT applications.
 
-Core2 is the second generation device in the M5Stack family, further enhances functions of the original M5Core. The main controller is based on ESP32, D0WDQ6-V3, which comes with two Xtensa 32-bit LX6 processors. Main frequency supports up to 240Mhz. Onboard 8MB PSRAM and16MB Flash. Wifi and BLE supported. 
-Equipped with a 2.0-inch capacitive touch screen, which brings users a smooth HMI experience. The built-in vibration motor can provide feedback and vibration reminder functions. Onboard RTC module provides accurate timing. The power supply is adopting AXP192 power management chip, which can effectively control the power consumption. At the same time, Core2 is equipped with a TF card slot and speaker. In order to ensure higher quality sound effect, the I2S digital audio interface power amplifier chip can effectively avoid signal distortion. There are independent Power Button and Reset (RST) Button on the side of Core2. And the 3 virtual buttons on the front screen can be programmable.
-M5GO Bottom for AWS, is an expansion base designed for M5Core2. Besides internal MPU6886 6-Axis IMU, Digital Mic (SPM1423), 500mAh Lithium ion battery and 10 programmable RGB LEDs(SK6812), it features with a secure element - ATECC608A, a crypto-authentication chip that can be used to lock away private keys securely.
+To learn more about the **AWS IoT EduKit** program, visit [https://edukit.workshop.aws](https://edukit.workshop.aws)
 
+The Core2 for AWS comes with an ESP32-D0WDQ6-V3 microcontroller, which features dual Xtensa 32-bit LX6 cores and a main frequency up to 240Mhz, with 2.4GHz WiFi, Bluetooth v4.2 BR/EDR, and BLE support. Comes with 8MB PSRAM and 16MB flash on board.
+
+The main unit is equipped with a 2.0-inch capacitive touch screen that provides a smooth and responsive human machine interface. The built-in vibration motor can be used to provide haptic feedback or alerts. Onboard RTC module provides accurate time of day. Power is supplied through an AXP192 power management chip, to monitor and control power attributes of the device. The included TF card slot supports microSD cards up to 16GB. The on-board speaker is paired with an I2S digital audio interface power amplifier chip to reduce signal distortion and provide clearer audio output. There are independent physical power and reset (RST) buttons on the sides of Core2 for AWS, with 3 programmable touch buttons on the front of the screen.
+
+The M5GO Bottom2 for AWS adds additional features and security for IoT applications. The MPU6886 provides 6-axis internal IMU and temperature, the SPM1423 digital microphone captures audio for recording or creating voice applications, 10 individually programmable RGB LEDs via SK6812 to create customized and animated light effects, a 500mAh lithium-ion battery provides power on the go, the onboard Microchip ATECC608 Trust&GO crypto-authentication chip is pre-provisioned with secure keys to simplify connectivity to AWS and accelerate cryptographic computation. 
 
 **Operations:**
 
-* Power on: click the power button on the left
+* Power on: One click the power button on the left
 
-* Power off: long press the left power button for 6 seconds
+* Power off: Long press the left power button for 6 seconds
 
 * Reset: Click the RST button on the bottom side
 
+?>For all questions or issue regarding this device, pls visit our forum: [https://forum.m5stack.com/category/41/core2-for-aws](https://forum.m5stack.com/category/41/core2-for-aws)
 
 ## Product Feature
 
-- ESP32 Based, support WiFi and Bluetooth
+- Reference hardware kit for use with AWS IoT EduKit
+- ESP32-D0WDQ6-V3, supports 2.4GHz WiFi, Bluetooth 4.2, BLE
 - 16M Flash, 8M PSRAM
-- Built-in ATECC608A hardware encryption chip
+- Built-in ATECC608 hardware encryption chip
 - Capacitive touch screen
 - Built-in PDM microphone, power indicator, 6-Axis IMU, vibration motor, I2S codec, Amplifier, Speaker, RTC, power button, reset button, 10 x RGB LEDs
 - TF card slot (support up to 16GB)
 - Built-in 500mAh Lithium ion battery, equipped with power management chip
-- AWS IDT Certified
-- Development platform [FreeRTOS](https://aws.amazon.com/freertos), [MicroPython](http://micropython.org/), [UIFlow](http://flow.m5stack.com), [Arduino](http://www.arduino.cc)
+- Supports [FreeRTOS](https://aws.amazon.com/freertos), [MicroPython](http://micropython.org/), [UIFlow](http://flow.m5stack.com), [Arduino](http://www.arduino.cc) development frameworks
+- Validated through AWS Device Qualification Program
 
-## Part List
+## Include
 
 - 1x M5Stack Core2
 - 1x M5GO Bottom2 for AWS
@@ -47,7 +60,7 @@ M5GO Bottom for AWS, is an expansion base designed for M5Core2. Besides internal
 - STEM Education
 - DIY projects
 
-## Specifications
+## Specification
 
 <table>
    <tr style="font-weight:bold">
@@ -68,7 +81,7 @@ M5GO Bottom for AWS, is an expansion base designed for M5Core2. Besides internal
    </tr>
    <tr>
       <td>Hardware encryption chip</td>
-      <td>ATECC608A</td>
+      <td>ATECC608</td>
    </tr>
    <tr>
       <td>Input voltage</td>
@@ -167,6 +180,8 @@ M5GO Bottom for AWS, is an expansion base designed for M5Core2. Besides internal
    </tr>
 </table>
 
+<img class="pic" src="assets/img/product_pics/core/core2_aws/core2_aws_03.webp">
+
 ## EasyLoader
 
 >EasyLoader is a concise and fast program writer, which has a built-in case program related to the product. It can be burned to the main control by simple steps to perform a series of function verification. Please install the corresponding driver according to the device type. M5Core host [Please click here to view the CP210X driver installation tutorial](en/arduino/arduino_development), M5StickC/V/T/ATOM series can be used without driver)
@@ -175,21 +190,18 @@ M5GO Bottom for AWS, is an expansion base designed for M5Core2. Besides internal
     <div style="background-color:white;">
         <div><img src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/easyloader_intro.webp"></div>
         <div class="easyloader-btn">
-            <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_M5Core2_FactoryTest.exe">Windows</a>
-            <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Core2_FactoryTest.dmg">MacOS</a>
-            <!-- <a>Linux</a>
-            <a>MacOS</a> -->
+            <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_Core2_for_AWS_Default.exe">Windows</a>
         </div>
     </div>
     <div>
         <video id="example_video" controls>
-            <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/CORE2%20.mp4" type="video/mp4">
+            <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/CORE2_FOR_AWS.mp4" type="video/mp4">
         </video>
         <div class="easyloader-mask">
         <a>
             <svg id="play-btn" t="1583228776634" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4152" width="75" height="75"><path d="M512 0C229.216 0 0 229.216 0 512s229.216 512 512 512 512-229.216 512-512S794.784 0 512 0z m0 928C282.24 928 96 741.76 96 512S282.24 96 512 96s416 186.24 416 416-186.24 416-416 416zM384 288l384 224-384 224z" p-id="4153" fill="#007aff"></path></svg></a>
             <p>Description:</p>
-            <p>This case will perform hardware running tests for speakers, wifi, buttons, accelerometer, TF-card(microSD), screen, etc.</p>
+            <p>Core2 for AWS factory default example.</p>
         </div>
     </div>
 </div>
@@ -220,7 +232,7 @@ TF card Maximum size 16GB
  <tr><td>FT6336U</td><td>SDA</td><td>SCL</td><td>INT</td><td>RST</td></tr>
 </table>
 
-**Mic & NS4168(Speaker)**
+**Mic & NS4168**
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO12</td><td>GPIO0</td><td>GPIO2</td><td>AXP_IO2</td><td>GPIO34</td></tr>
@@ -232,7 +244,7 @@ TF card Maximum size 16GB
 
 <table>
  <tr><td>AXP192</td><td>AXP_IO1</td><td>AXP_LDO3</td></tr>
- <tr><td>Green LED</td><td>Vcc</td></tr>
+ <tr><td>Green LED</td><td>Vcc</td><td></td></tr>
  <tr><td>Vibration motor</td><td></td><td>Vcc</td></tr>
 </table>
 
@@ -276,7 +288,7 @@ TF card Maximum size 16GB
  <tr><td>AXP192</td><td>SDA</td><td>SCL</td></tr>
  <tr><td>BM8563</td><td>SDA</td><td>SCL</td></tr>
  <tr><td>FT6336U</td><td>SDA</td><td>SCL</td></tr>
- <tr><td>ATECC608A</td><td>SDA</td><td>SCL</td></tr>
+ <tr><td>ATECC608</td><td>SDA</td><td>SCL</td></tr>
 </table>
 
 
@@ -355,7 +367,7 @@ For more information about Pin assignment and Pin Remapping, Please refer to [ES
    - [BM8563](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/BM8563_V1.1_cn.pdf)
    - [SY7088](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/SY7088-Silergy.pdf)
    - [AXP192](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/AXP192_datasheet_en.pdf)
-   - [ATECC608A](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/ATECC608A-TNGTLS-CryptoAuthentication-Data-Sheet-DS40002112B.pdf)
+   - [ATECC608](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/ATECC608-TNGTLS-CryptoAuthentication-Data-Sheet-DS40002112B.pdf)
 
 -  **API**
 
@@ -373,18 +385,20 @@ For more information about Pin assignment and Pin Remapping, Please refer to [ES
 
 ### Arduino IDE
 
-- Click[here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Core/M5Core2/Arduino) to get Arduino code
+- [FactoryTest](https://github.com/m5stack/M5Core2/tree/master/examples/core2_for_aws)
 
 ### Tutorial
 
 - [UIFlow](en/quick_start/core2/m5stack_core2_get_started_MicroPython)
 - [Arduino](en/arduino/arduino_core2_development)
 
+<el-divider content-position="right">Last updated: 2020-12-15</el-divider>
+
 <script>
 
-   var purchase_link = 'https://m5stack.com/collections/m5-core/products/m5stack-core2-esp32-iot-development-kit';
+   var purchase_link = 'https://m5stack.com/products/m5stack-core2-for-aws-esp32-iot-edukit';
 
-   var quickstart_link = 'https://docs.m5stack.com/#/en/quick_start/core2/m5stack_core2_quick_start';
+   var quickstart_link = '/#/en/quick_start/core2_for_aws/quick_start_list';
 
    anchor_search(purchase_link,quickstart_link);
    scrollFunc();

@@ -20,7 +20,7 @@
 ## 包含
 
 - 1x LIGHT Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -53,7 +53,7 @@
    </tr>
     <tr>
       <td>包装尺寸</td>
-      <td>67mm x 53mm x 12mm</td>
+      <td>67*53*12mm</td>
    </tr>
 </table>
 
@@ -87,7 +87,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
  <tr><td>LIGHT Unit</td><td>AnalogSignal Pin</td><td>DigitalSignal Pin</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -97,15 +97,15 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-- [请点击此处下载Arduino示例代码](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/LIGHT)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/LIGHT)
 
 <img src="assets/img/product_pics/unit/unit_example/LIGHT/example_unit_light_04.webp">
 
 ### 2. UIFlow
 
-- [请点击此处下载UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/LIGHT/UIFlow)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/LIGHT/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/LIGHT/example_unit_light_03.webp">
 

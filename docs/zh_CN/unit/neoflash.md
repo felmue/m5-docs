@@ -6,7 +6,7 @@
 
 ## 描述
 
-**NEOFLASH** 是一款RGB LED灯板.集成 192 个 RGB LED（24x8），与 PIR 人体感应 Unit,且提供 3 个I2C拓展接口.灯板通过GROVE B接口与M5Core进行连接.（RGB LED连接GPIO26、PIR人体感应连接至GPIO36.）灯板背部安装磁铁，可以将其放置在金属物体表面吸附固定.
+**NEOFLASH** 是一款RGB LED灯板.集成 192 个 RGB LED（24x8），与 PIR 人体感应 Unit,且提供 3 个I2C拓展接口.灯板通过PORT B接口与M5Core进行连接.（RGB LED连接GPIO26、PIR人体感应连接至GPIO36.）灯板背部安装磁铁，可以将其放置在金属物体表面吸附固定.
 
 <img src="assets/img/product_pics/unit/unit_neoflash_03.webp">
 
@@ -21,7 +21,7 @@
 ## 包含
 
 - 1x NeoFlash Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 规格参数
 
@@ -77,7 +77,7 @@
 ### 管脚映射
 
 <table>
-<tr><td>M5Core(GROVE B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
+<tr><td>M5Core(PORT B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
  <tr><td>NEOFLASH Unit</td><td>PIR Pin</td><td>RGB Pin</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -89,11 +89,11 @@
 
 ## 案例程序
 
-### Arduino IDE
+### Arduino
 
 该案例将展示基于网络的PIR人体感应时钟.当检测到人体靠近时，灯板点亮显示实时时间，当检测信号消失，则熄灭灯板.
 
-- [请点击此处下载Arduino示例代码](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/NEOFLASH_SK6812_PIR)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/NEOFLASH_SK6812_PIR)
 
 <img src="assets/img/product_pics/unit/unit_example/NEOFLASH/example_unit_neoflash_01.webp">
 

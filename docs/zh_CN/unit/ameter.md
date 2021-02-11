@@ -1,4 +1,4 @@
-# Ammeter Unit{docsify-ignore-all}
+# Ameter Unit{docsify-ignore-all}
 
 <el-tag effect="plain">SKU:U086</el-tag>
 
@@ -6,7 +6,7 @@
 
 ## 描述
 
-**Ammeter Unit** 是一款电流计，可以对电流进行实时监测。内部采用16位ADC数模转换器ADS1115，通过I2C(0X48)进行通讯。为了保证测量精度，内置DC-DC隔离电源，同时I2C接口通过低功耗隔离器CA-IS3020S进行电气隔离，防止数据总线或其他电路上的噪声和浪涌进入本地接地端而干扰或损坏敏感电路。每个Unit在出厂时都单独进行校准，精度为满量程%1，±1位读数，分辨率为0.3mA，最大测量电流为±4A，内部集成4A熔断器，防止测量电流过大烧毁电路。
+**Ameter Unit** 是一款电流计，可以对电流进行实时监测。内部采用16位ADC数模转换器ADS1115，通过I2C(0X48)进行通讯。为了保证测量精度，内置DC-DC隔离电源，同时I2C接口通过低功耗隔离器CA-IS3020S进行电气隔离，防止数据总线或其他电路上的噪声和浪涌进入本地接地端而干扰或损坏敏感电路。每个Unit在出厂时都单独进行校准，精度为满量程%1，±1位读数，分辨率为0.3mA，最大测量电流为±4A，内部集成4A熔断器，防止测量电流过大烧毁电路。
 
 >? EEPROM(0x51)在出厂时内置了校准参数，请勿对EEPROM进行写操作，否则校准数据将被覆盖导致测量结果不准确。
 
@@ -27,8 +27,8 @@
 
 ## 包含
 
-- 1x Ammeter Unit
-- 1x Grove 线(20cm)
+- 1x Ameter Unit
+- 1x HY2.0-4P线缆(20cm)
 
 ## 应用
 
@@ -46,8 +46,8 @@
       <td>±4A</td>
    </tr>
    <tr>
-      <td>通讯协议</td>
-      <td>I2C</td>
+      <td>通信协议</td>
+      <td>I2C：0x48</td>
    </tr>
    <tr>
    <td>净重</td>
@@ -72,7 +72,7 @@
 
 **不同的量程分辨率不同，获得的结果误差值不同，请根据需要设置合适的量程。请勿对EEPROM进行写操作，如果确实希望将自定义校准值保存至EEPROM，使用下列语句，一旦写入后出厂数据将丢失**
 
-```Arduino
+<!-- ```Arduino
 
 bool Voltmeter::saveCalibration2EEPROM(voltmeterGain_t gain, int16_t hope, int16_t actual)
 
@@ -87,20 +87,22 @@ bool Voltmeter::saveCalibration2EEPROM(voltmeterGain_t gain, int16_t hope, int16
 //@Parameter: int16_t hope 设置目标值
 //@Parameter: int16_t actual ADC原始读数
 
-```
+``` -->
 
-<table>
+<!-- <table>
  <tr><td>ADC1115参考校准档位</td><td>校准电流(A)</td><td>期望读数(int16)</td></tr>
  <tr><td>PGA512(O.512)</td><td>2</td><td>6400</td></tr>
-</table>
+</table> -->
+
+?>最大绝对值输入电流`6A`，严禁超过，否则将烧毁设备。
 
 <table>
  <tr><td>电流测量档位</td><td>最大输入电流(A)</td><td>功耗(W)</td><td>最小分辨率(mA)</td><td>增益系数</td></tr>
- <tr><td>4.096</td><td>40.96</td><td>83.88608</td><td>2.5</td><td>0.125</td></tr>
- <tr><td>2.048</td><td>20.48</td><td>20.97152</td><td>1.25</td><td>0.0625</td></tr>
+ <tr><td>PAG_4096(已校准)</td><td>±4</td><td>83.88</td><td>2.5</td><td>0.125</td></tr>
+ <!-- <tr><td>2.048</td><td>20.48</td><td>20.97152</td><td>1.25</td><td>0.0625</td></tr>
  <tr><td>1.024</td><td>10.24</td><td>5.24288</td><td>0.625</td><td>0.03125</td></tr>
- <tr><td>0.512</td><td>5.12</td><td>1.31072</td><td>0.3125</td><td>0.015625</td></tr>
- <tr><td>0.256</td><td>2.56</td><td>0.32768</td><td>0.15626</td><td>0.007813</td></tr>
+ <tr><td>0.512</td><td>5.12</td><td>1.31072</td><td>0.3125</td><td>0.015625</td></tr> -->
+ <tr><td>PAG_256(已校准)</td><td>±2.56</td><td>0.32768</td><td>0.15626</td><td>0.007813</td></tr>
 </table>
 
 
@@ -142,15 +144,21 @@ bool Voltmeter::saveCalibration2EEPROM(voltmeterGain_t gain, int16_t hope, int16
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>SDA(GPIO21)</td><td>SCL(GPIO22)</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>SDA(GPIO21)</td><td>SCL(GPIO22)</td><td>5V</td><td>GND</td></tr>
  <tr><td>A Meter Unit</td><td>SDA</td><td>SCL</td><td>5V</td><td>GND</td></tr>
 </table>
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[点击这里获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/A_Meter_Unit)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/A_Meter_Unit)
+
+### 2. UIFlow
+
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/A_Meter_Unit/UIFlow)
+
+<img src="assets/img/product_pics/unit/a_meter/a_meter.webp" width="80%" height="80%">
 
 <script>
 

@@ -15,7 +15,7 @@
 - 打开手机浏览器，访问<mark>192.168.4.1</mark>,进入监控页面实时获取拍摄视频.
 - 视频帧率大约在每秒5-6帧.
 
-因为模块可以生成 WIFI 热点 AP，所以可以用手机、PC 或其他设备通过 WIFI 无线获取摄像头图片，也可以通过模块的 GROVE 接口有线获取摄像头图片。目前可以实现网络摄像头、颜色识别和人脸识别功能。
+因为模块可以生成 WIFI 热点 AP，所以可以用手机、PC 或其他设备通过 WIFI 无线获取摄像头图片，也可以通过模块的 HY2.0-4P 接口有线获取摄像头图片。目前可以实现网络摄像头、颜色识别和人脸识别功能。
 
 ## 产品特性
 
@@ -120,9 +120,9 @@
 | Power Supply 3.3V     | 3V3      | 3V3       |
 | Ground                | GND      | GND       | 
 
-**GROVE 接口**
+**HY2.0-4P 接口**
 
-| *Grove*         | *M5Camera*  | 
+| *HY2.0-4P*         | *M5Camera*  | 
 | :-----------: | :------:  | 
 | SCL           | IO13      | 
 | SDA           | IO4       |
@@ -138,7 +138,7 @@
 
 **BME280 接口**
 
-*IIC 地址是 0x76*
+*I2C 地址是 0x76*
 
 | *BMP280*         | *M5Camera*  |
 | :-----------: | :------:  |
@@ -215,11 +215,13 @@
 
 <img src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/m5-docs_schematic/unit/m5camera_sch_03.webp">
 
+<el-divider content-position="right">Last updated: 2020-12-22</el-divider>
+
 <script>
 
-   var purchase_link = 'https://m5stack.com/products/psram-camera-module';
+   var purchase_link = 'https://m5stack.com/collections/m5-unit/products/psram-camera-module';
 
-   var quickstart_link = 'https://docs.m5stack.com/#/zh_CN/quick_start/m5camera/m5camera_quick_start';
+   var quickstart_link = '/#/zh_CN/quick_start/m5camera/m5camera_quick_start';
 
    anchor_search(purchase_link,quickstart_link);
    scrollFunc();

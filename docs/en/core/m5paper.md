@@ -70,7 +70,7 @@ Additionally the FM24C02 internal eeprom chip provided 2K-bit(256x8)-EEPROM can 
    </tr>
    <tr>
       <td>E-Ink Display</td>
-      <td>Model Number：EPD_ED047TC1 | 540*960@4.7" | Grayscale : 16 Levels | Display area : 58.32*103.68mm | Display Driver : IT8951</td>
+      <td>Model Number：EPD_ED047TC1 | 540*960@4.7" | Grayscale : 16 Levels | Display area : 58.32*103.68mm | Display Driver : IT8951E</td>
    </tr>
    <tr>
       <td>Physical Button</td>
@@ -125,24 +125,30 @@ Additionally the FM24C02 internal eeprom chip provided 2K-bit(256x8)-EEPROM can 
    - [ToDo](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_M5Paper_Todo.exe)
    - [Calculator](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_M5Paper_Calculator.exe)
 
+- **MacOS** 
+   - [FactoryTest](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Paper_FactoryTest.dmg)
+   - [ToDo](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Paper_Todo.dmg)
+   - [Calculator](https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Paper_Calculator.dmg)
+
 ## PinMap
 
 **E-INK & TF-card(microSD)**
 
 Resolution：540*960
- 
+
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO13</td><td>GPIO12</td><td>GPIO14</td><td>GPIO15</td><td>GPIO4</td></tr>
- <tr><td>IT8951</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td><td>/</td></tr>
+ <tr><td>IT8951E</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td><td>/</td></tr>
  <tr><td>TF-card(microSD)</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>/</td><td>CS</td></tr>
 </table>
 
 
-**Multi-function button**
+**Multi-function button & PWR**
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO37</td><td>GPIO38</td><td>GPIO39</td></tr>
- <tr><td>Multi-function button</td><td>Right</td><td>BTN/PWR</td><td>Left</td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO37</td><td>GPIO38</td><td>GPIO39</td><td>GPIO2</td></tr>
+ <tr><td>Multi-function button</td><td>Right</td><td>BTN/PWR</td><td>Left</td><td>/</td></tr>
+ <tr><td>Power Control</td><td>/</td><td>/</td><td>/</td><td>MOS</td></tr>
 </table>
 
 
@@ -228,7 +234,8 @@ For more info on specific pin functions refer to the official ESP32 Docs[ESP32 d
 
 -  **API**
 
-   - [Arduino API](zh_CN/arduino/arduino_home_page?id=m5paper)
+   - [Arduino API](en/arduino/arduino_home_page?id=m5paper_api)
+   - [image2gray tool](https://github.com/m5stack/M5EPD/tree/main/tools)
 
 ## Example
 
@@ -240,14 +247,24 @@ For more info on specific pin functions refer to the official ESP32 Docs[ESP32 d
    - [M5EPD_TTFExample](https://github.com/m5stack/M5EPD_TTFExample)
    - [M5EPD-Lib](https://github.com/m5stack/M5EPD)
 
+>When using FactoryTest to load special characters (such as Chinese, Japanese), please put the font file into the TF card root directory and name it as `font.ttf`.[download ttf file](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/example/Font.ttf)
+
 ## Schematic
 
    - [M5 PAPER Schematic](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/schematic/Core/m5paper/M5_PAPER_SCH.pdf)
 
 ## Video
 
+- Product Introduce
+
 <video class="video_size" controls>
     <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/M5PAPER.mp4" type="video/mp4">
+</video>
+
+- How to open the M5Paper shell?
+
+<video class="video_size" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/paper_open_shell.mp4" type="video/mp4">
 </video>
 
 <script>

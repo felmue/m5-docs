@@ -8,10 +8,10 @@
 
 **LIGHT** is a light intensity sensor unit with an adjustable photoresistor。
 
-A photoresistor is a light-controlled variable resistor. The resistance of a photoresistor decreases with increasing incident light intensity, and vice versa.
-It exhibits photoconductivity which make it possiable to detect the varies based on Voltage, and use a AD to convert the digital data.
+A photoresistor is a light-controlled variable resistor. The resistance of a photoresistor decreases with increasing incident light intensity and vice versa.
+The sensor exhibits photoconductivity which make it possible to detect the light varies based on voltage and use an AD (Analog to digital converter) to convert the digital data.
 
-We add some extra work to strengthen the circult, a Dual Differential Comparators **LM393**, compares the differntial voltage between the photoresistor and the varistor. It could offer larger and accuracy range of light intensity.
+We added some extra work to strengthen the circuit, a Dual Differential Comparators **LM393**, compares the differential voltage between the photoresistor and the varistor. It could offer larger and accuracy range of light intensity.
 
 ## Product Features
 
@@ -49,7 +49,7 @@ We add some extra work to strengthen the circult, a Dual Differential Comparator
    </tr>
     <tr>
       <td>Package Size</td>
-      <td>67mm x 53mm x 12mm</td>
+      <td>67*53*12mm</td>
    </tr>
 </table>
 
@@ -93,7 +93,7 @@ We add some extra work to strengthen the circult, a Dual Differential Comparator
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
 The code below is incomplete. To complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/LIGHT)
 
@@ -101,7 +101,7 @@ The code below is incomplete. To complete code, please click [here](https://gith
 
 ### 2. UIFlow
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/LIGHT/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/LIGHT/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/LIGHT/example_unit_light_03.webp">
 
@@ -112,6 +112,8 @@ To get complete code, please click [here](https://github.com/m5stack/M5-ProductE
 <video class="video_size" controls>
     <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/LukeVideo/m5stack%20iot%20lighting%20part%202%20-%20light%20sensor%20control.mp4" type="video/mp4">
 </video>
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

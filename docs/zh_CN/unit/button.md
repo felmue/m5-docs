@@ -6,7 +6,7 @@
 
 ## 描述
 
-**BUTTON** 是一个单按键 Unit，通过检测输入引脚高/低电平变化，进而判断按键状态.该 Unit 通过GROVE B端口与M5Core进行通信.
+**BUTTON** 是一个单按键 Unit，通过检测输入引脚高/低电平变化，进而判断按键状态.该 Unit 通过PORT B端口与M5Core进行通信.
 
 **如下图所示:**
 
@@ -19,13 +19,13 @@
 
 ## 产品特性
 
-- GROVE 接口, 支持 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc).
+- HY2.0-4P 接口, 支持 [UIFlow](http://flow.m5stack.com) 、 [Arduino](http://www.arduino.cc).
 - 2x LEGO 兼容孔
 
 ## 包含
 
 - 1x BUTTON Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 
 ## 应用
 
@@ -87,7 +87,7 @@
 ## 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE B)</td><td>Btn (GPIO36)</td><td>NC (GPIO26)</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT B)</td><td>Btn (GPIO36)</td><td>NC (GPIO26)</td><td>5V</td><td>GND</td></tr>
  <tr><td>BUTTON Unit</td><td>BUTTON Pin</td><td>/</td><td>5V</td><td>GND</td></tr>
 </table>
 
@@ -97,13 +97,13 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/BUTTON)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/BUTTON)
 
 ### 2. UIFlow
 
-[请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BUTTON/UIFlow)
+- [请点击此处获取UIFlow示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/BUTTON/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/BUTTON/example_unit_button_03.webp">
 

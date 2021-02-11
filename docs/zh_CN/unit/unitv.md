@@ -16,11 +16,11 @@
 
 ## 描述
 
-**UNIT-V**是一款搭载Kendryte K210的AI视觉处理摄像头单元，集成双核64位RISC-V CPU和最先进的神经网络处理器边缘计算片上系统.UNIT-V AI摄像头体积非常小巧，适合嵌入到各种设备当中，具备机器视觉处理能力，支持多种图像识别能力（ 如实时获取被检测目标的大小与坐标 • 实时获取被检测目标的种类），并且能够在低功耗情况下进行卷积神经网络计算，因此UNIT-V会是一个很好的零门槛机器视觉嵌入式解决方案.它支持MicroPython开发环境，这使得你在使用UNIT-V上进行项目开发时，程序代码将会更加精简.搭载OV2640 200万像素图像传感器，是机器视觉项目的理想选择.机身配备两个可编程按键，正面有一颗RGB LED指示灯，方便进行状态显示.底部提供一个兼容GROVE的HY2.0*4P接口和一个TYPE-C接口，可以与主控设备进行连接.支持TF卡扩展内存，相关素材及模型文件调用使用更方便.
+**UNIT-V**是一款搭载Kendryte K210的AI视觉处理摄像头单元，集成双核64位RISC-V CPU和最先进的神经网络处理器边缘计算片上系统.UNIT-V AI摄像头体积非常小巧，适合嵌入到各种设备当中，具备机器视觉处理能力，支持多种图像识别能力（ 如实时获取被检测目标的大小与坐标 • 实时获取被检测目标的种类），并且能够在低功耗情况下进行卷积神经网络计算，因此UNIT-V会是一个很好的零门槛机器视觉嵌入式解决方案.它支持MicroPython开发环境，这使得你在使用UNIT-V上进行项目开发时，程序代码将会更加精简.搭载OV2640 200万像素图像传感器，是机器视觉项目的理想选择.机身配备两个可编程按键，正面有一颗RGB LED指示灯，方便进行状态显示.底部提供一个兼容HY2.0*4P接口和一个TYPE-C接口，可以与主控设备进行连接.支持TF卡扩展内存，相关素材及模型文件调用使用更方便.
 
-<img src="assets/img/product_pics/unit/unit-v/unit_v_05.webp" width="30%" height="30%">
 
 ## 产品特性
+
 - 双核 64-bit RISC-V RV64IMAFDC (RV64GC) CPU / 400Mhz(Normal)
 - 双精度 FPU
 - 8MiB 64bit 片上 SRAM     
@@ -30,6 +30,13 @@
 - 直接内存存取控制器  (DMAC)
 - 支持 MicroPython
 - 固件加密支持
+- 板载硬件资源:
+    - Flash:  16M
+    - Camera :OV2640
+    - 按键:  button * 2
+    - 状态灯:  WS2812 LED
+    - 拓展卡接口:  TF card/Micro SD
+    - 接口:  HY2.0/compatible GROVE
 
 ## 包含
 
@@ -72,7 +79,7 @@
    </tr>
    <tr>
       <td>接口</td>
-      <td>TypeC x 1, GROVE(I2C+I/0+UART) x 1</td>
+      <td>TypeC x 1, HY2.0-4P(I2C+I/0+UART) x 1</td>
    </tr>
    <tr>
       <td>RGB LED</td>
@@ -118,6 +125,7 @@
 
 
 ## 关于 KENDRYTE K210 
+
 Kendryte K210 是集成机器视觉能力的系统级芯片 (SoC)。使用台积电 (TSMC) 超低功耗的 28 纳米先进制程，具有双核 64 位处理器，拥有较好的功耗性能，稳定性与可靠性。该方案力求零门槛开发，可在最短时效部署于用户的产品中，赋予人工智能应用.
 - 具备机器视觉能力
 - 更好的低功耗视觉处理速度与准确率 
@@ -141,6 +149,7 @@ Kendryte K210 是集成机器视觉能力的系统级芯片 (SoC)。使用台积
 - 片上 SRAM:  8MiB
 
 ## 关于 OV2640
+
 - 支持输出格式（8位）：
   - YUV(422/420)/YCbCr422
   - RGB565/555
@@ -279,6 +288,17 @@ Unit V目前并不能识别所有类型的MicroSD卡，我们对一些常见的M
 ## 案例程序
 
 - 需配合RoverC使用[点击此处下载示例](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/App/UnitV/track_ball)
+
+## 管脚映射
+
+<table>
+ <tr><td>UnitV</td><td>GPIO8</td><td>GPIO19</td><td>GPIO18</td><td>GPIO34,GPIO35</td></tr>
+ <tr><td>Hardware</td><td>RGB LED</td><td>Button A</td><td>Button B</td><td></td></tr>
+ <tr><td>HY2.0-4P</td><td></td><td></td><td></td><td>Interface</td></tr>
+</table>
+
+<img src="assets/img/product_pics/unit/unit-v/unit_v_05.webp" width="30%">
+
 
 ## 相关视频
 

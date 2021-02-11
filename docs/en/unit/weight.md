@@ -6,14 +6,15 @@
 
 ## Description
 
-**WEIGHT** intergrates an 24 bits A/D chip **HX711** that is specifically designed for electronic weighing device.
+**WEIGHT** integrates a **HX711** 24 bits A/D chip that is specifically designed for electronic weighing device.
 
-The input multiplexer selects either Channel A or B differential input to the low-noise programmable gain amplifier (PGA). Channel A can be programmed with a gain of 128 or 64, corresponding to a full-scale differential input
-voltage of ±20mV or ±40mV respectively, when a 5V supply is connected to AVDD analog power supply pin. Channel B has a fixed gain of 32. There is no programming needed for the
-internal registers. All controls to the HX711 are
-through the pins.
+The input multiplexer selects either Channel A or B differential input to the low-noise programmable gain amplifier (PGA). Channel "A" can be programmed with a gain of 128 or 64, corresponding to a full-scale differential input voltage of ±20mV or ±40mV respectively.
 
-In the test, we have this Unit channel A to connect a pressure sensor. Then use M5Core screen to display the weight data.
+when a 5V supply is connected to AVDD analog power supply pin.
+
+Channel B has a fixed gain of 32. There is no programming needed for the internal registers. All controls to the HX711 are through the pins.
+
+In the test, we have this Unit channel A to connect a pressure sensor. Then, use M5Core screen to display the weight data.
 
 <img src="assets/img/product_pics/unit/unit_weight_04.webp">
 
@@ -41,7 +42,6 @@ power supply regulator:
 - 16 pin SOP-16 package
 - Program Platform: Arduino, UIFlow(Blockly, Python)
 - Two Lego-compatible holes
-
 
 ## Include
 
@@ -101,7 +101,7 @@ power supply regulator:
 
 >2. After downloading the software, double-click to run the application, connect the M5 device to the computer through the data cable, select the port parameters, click **"Burn"** to start burning. (**For M5StickC burning, please Set the baud rate to 750000 or 115200**)
 
-?>3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
+>3. Currently EasyLoader is only suitable for Windows operating system, compatible with M5 system adopts ESP32 as the control core host. Before installing for M5Core, you need to install CP210X driver (you do not need to install with M5StickC as controller)[Click here to view the driver installation tutorial](en/related_documents/M5Burner#install-usb-driver)
 
 ## Schematic
 
@@ -132,17 +132,19 @@ power supply regulator:
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
 We used a pressure sensor(10kg) in this experiment. (Unit: gram)
 
-To get complete code, please click [here](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/WEIGHT_HX711)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/WEIGHT_HX711)
 
 ### 2. UIFlow
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/WEIGHT/UIFlow)
+- [Click here to download the UIFlow example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/WEIGHT/UIFlow)
 
 <img src="assets/img/product_pics/unit/unit_example/WEIGHT/example_unit_weight_01.webp">
+
+<el-divider content-position="right">Last updated: 2020-12-14</el-divider>
 
 <script>
 

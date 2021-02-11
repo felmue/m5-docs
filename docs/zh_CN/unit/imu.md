@@ -6,7 +6,7 @@
 
 ## 描述
 
-**6-Axis IMU Unit** 是一款6轴姿态传感器，内部集成了3轴重力加速计与3轴陀螺仪，可以实时计算倾斜角度与加速度。芯片采用MPU6886,片上具有16位ADC，内置可编程的数字滤波器与片上温度传感器，采用I2C接口与主机通讯，支持低功耗模式。
+**6-Axis IMU Unit** 是一款6轴姿态传感器，内部集成了3轴重力加速计与3轴陀螺仪，可以实时计算倾斜角度与加速度。芯片采用MPU6886,片上具有16位ADC，内置可编程的数字滤波器与片上温度传感器，采用I2C接口(addr:0x68)与主机通讯，支持低功耗模式。
 
 ## 产品特性
 
@@ -20,7 +20,7 @@
 ## 包含
 
 - 1x 6-Axis IMU Unit
-- 1x Grove Cable (5cm)
+- 1x HY2.0-4P线缆 (5cm)
 
 ## 应用
 
@@ -34,6 +34,10 @@
    <tr style="font-weight:bold">
       <td>规格</td>
       <td>参数</td>
+   </tr>
+   <tr>
+      <td>通讯协议</td>
+      <td>I2C：0x68</td>
    </tr>
    <tr>
       <td>加速计量程</td>
@@ -114,15 +118,15 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE A)</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT A)</td><td>SCL</td><td>SDA</td><td>5V</td><td>GND</td></tr>
  <tr><td>IMU Unit</td><td>GPIO22</td><td>GPIO21</td><td>5V</td><td>GND</td></tr>
 </table>
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[点击这里获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/IMU_Unit)
+- [请点击此处获取Arduino示例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/IMU_Unit)
 
 <script>
 

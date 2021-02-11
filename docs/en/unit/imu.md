@@ -6,7 +6,7 @@
 
 ## Description
 
-**6-Axis IMU Unit** is a 6-axis attitude sensor with 3-axis gravity accelerometer and 3-axis gyroscope, which can calculate tilt angle and acceleration in real time. The chip adopts mpu6886, has 16 bit ADC, built-in programmable digital filter and on-chip temperature sensor, adopts I2C interface to communicate with host computer, and supports low-power mode.
+**6-Axis IMU Unit** is a 6-axis attitude sensor with 3-axis gravity accelerometer and 3-axis gyroscope, which can calculate tilt angle and acceleration in real time. The chip adopts mpu6886, has 16 bit ADC, built-in programmable digital filter and on-chip temperature sensor, adopts I2C interface (addr:0x68) to communicate with host computer, and supports low-power mode.
 
 ## Product Features
 
@@ -34,6 +34,10 @@
    <tr style="font-weight:bold">
       <td>Resources</td>
       <td>Parameter</td>
+   </tr>
+   <tr>
+      <td>Communication protocol</td>
+      <td>I2C：0x68</td>
    </tr>
    <tr>
       <td>Accelerometer range</td>
@@ -104,7 +108,7 @@
 
 ## Related Link
 
--  **Datasheet** 
+-  **Datasheet**
     - [MPU 6886](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/MPU-6886-000193%2Bv1.1_GHIC_en.pdf)
 
 ## Schematic
@@ -120,9 +124,11 @@
 
 ## Example
 
-### 1. Arduino IDE
+### 1. Arduino
 
-To get complete code, please click [here](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/IMU_Unit)
+- [Click here to download the Arduino example](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/IMU_Unit)
+
+<el-divider content-position="right">Last updated: 2020-12-11</el-divider>
 
 <script>
 

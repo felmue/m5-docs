@@ -19,7 +19,7 @@
 ## 包含
 
 - 1x RELAY Unit
-- 1x Grove 线
+- 1x HY2.0-4P线缆
 - 1x 3.96 端子
 
 ## 应用
@@ -81,9 +81,9 @@
 
 ## 案例程序
 
-### 1. Arduino IDE
+### 1. Arduino
 
-[请点击此处下载Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/RELAY)
+- [点击此处获取Arduino示例程序](https://github.com/m5stack/M5Stack/tree/master/examples/Unit/RELAY)
 
 ### 2. UIFlow
 
@@ -98,7 +98,7 @@
 ### 管脚映射
 
 <table>
- <tr><td>M5Core(GROVE B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
+ <tr><td>M5Core(PORT B)</td><td>GPIO36</td><td>GPIO26</td><td>5V</td><td>GND</td></tr>
  <tr><td>RELAY Unit</td><td>/</td><td>RELAY Controlling Pin</td><td>5V</td><td>GND</td></tr>
 </table>
 

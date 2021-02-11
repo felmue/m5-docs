@@ -4,19 +4,25 @@
 
 <div class="product_pic"><img class="pic" src="assets/img/product_pics/core/core2_aws/core2_aws_01.webp"><img class="pic" src="assets/img/product_pics/core/core2_aws/core2_aws_02.webp"></div>
 
+## 教程&快速上手
+
+选择你想使用的开发平台，查看对应的教程&快速上手。
+
+<a href="https://edukit.workshop.aws"><el-tag effect="plain">FreeRTOS</el-tag></a>
+<a href="/#/zh_CN/quick_start/core2/m5stack_core2_get_started_MicroPython"><el-tag effect="plain">UIFlow</el-tag></a>
+<a href="/#/zh_CN/arduino/arduino_core2_development"><el-tag effect="plain">Arduino</el-tag></a>
+
 ## 描述
 
-**Core2 for AWS**是AWS物联网学习项目的专属套件。它由**M5Stack Core2**核心主控和**M5GO-Bottom For AWS**拓展底座组成，并且额外定制集成了ATECC608A硬件加密，是物联网学习和安全项目构建的理想套件。
+**Core2 for AWS**是AWS物联网学习项目的专属套件。它由**M5Stack Core2**核心主控和**M5GO-Bottom For AWS**拓展底座组成，并且额外定制集成了ATECC608 [Trust&GO](https://www.microchip.com/design-centers/security-ics/trust-platform/trust-go) 硬件加密，是物联网学习和安全项目构建的理想套件。
 
-### Core2
+获取更多**AWS IoT EduKit**相关教程, 访问 [https://edukit.workshop.aws](https://edukit.workshop.aws)
 
-**Core2** 是M5Stack开发套件系列中第二代主机，在原有一代主机基础上对功能进一步加强，硬件功能更加齐全。主控ESP32型号为D0WDQ6-V3，具有两个可以单独控制的 Xtensa® 32-bit LX6 处理器，主频高达240Mhz，支持WiFi与蓝牙功能，板载16MB Flash与8MB PSRAM，可通过TYPE-C接口下载程序，强劲的配置满足复杂应用的资源开销。正面搭载一块2.0寸一体化电容式触摸屏，为用户带来更流畅的人机交互体验。机身内置震动马达，可提供触觉回馈和震动提醒功能。内建的RTC模块可提供精准计时功能。电源部分搭载AXP192电源管理芯片可有效控制机身功耗，内置绿色电源指示灯。同时机身内配备了TF-card(microSD)卡槽与扬声器，为了保证获得更高质量的声音效果，采用I2S数字音频接口的功放芯片，能有效防止信号失真。在机身的左侧和底部配有独立的电源按键与重启(RST)按键，屏幕正面的3个圆点属于触摸屏的一部分，可通过编写程序设置热区映射为3个虚拟按键。
+其核心主控**Core2**配备了ESP32-D0WDQ6-V3，具有两个可以单独控制的 Xtensa® 32-bit LX6 处理器，主频高达240Mhz，支持WiFi与蓝牙功能，板载16MB Flash与8MB PSRAM，可通过TYPE-C接口下载程序，强劲的配置满足复杂应用的资源开销。正面搭载一块2.0寸一体化电容式触摸屏，为用户带来更流畅的人机交互体验。机身内置震动马达，可提供触觉回馈和震动提醒功能。内建的RTC模块可提供精准计时功能。电源部分搭载AXP192电源管理芯片可有效控制机身功耗，内置绿色电源指示灯。同时机身内配备了TF-card(microSD)卡槽与扬声器，为了保证获得更高质量的声音效果，采用I2S数字音频接口的功放芯片，能有效防止信号失真。在机身的左侧和底部配有独立的电源按键与重启(RST)按键，屏幕正面的3个圆点属于触摸屏的一部分，可通过编写程序设置热区映射为3个虚拟按键。
 
-### M5GO-Bottom For AWS
+**M5GO-Bottom For AWS** 是专为该定制款设计的拓展型底座，底座集成了MPU6886六轴姿态传感器，数字麦克风(SPM1423),500mAh锂电池。提供两组HY2.0-4P拓展接口将常用的ADC/DAC/UART引脚进行了引出，能够用于各类型传感器的接入。底座两侧分别为10颗可编程RGB灯(SK6812)，配合磨砂透光材质遮光条，能够提供柔和舒适发光效果。底部采用pogo pin磁吸充电接口，当吸附充电底座时，电流将经过内置的TP4057充电芯片安全的流入内部电池。除充电功能外pogo pin接口对主控I2C总线进行了引出，这使得你能够通过磁吸的方式去外接拓展。内置吸附磁铁，背面采用兼容LEGO孔设计，能够与你的其他的LEGO结构设计无缝对接。
 
-**M5GO-Bottom For AWS** 是一款专为Core2设计的拓展型底座，底座集成了MPU6886六轴姿态传感器，数字麦克风(SPM1423),500mAh锂电池。提供两了组HY2.0-4P拓展接口将常用的ADC/DAC/UART引脚进行了引出，能够用于各类型传感器的接入。底座两侧分别为10颗可编程RGB灯(SK6812)，配合磨砂透光材质遮光条，能够提供柔和舒适发光效果。底部采用pogo pin磁吸充电接口，当吸附充电底座时，电流将经过内置的TP4057充电芯片安全的流入内部电池。除充电功能外pogo pin接口对主控I2C总线进行了引出，这使得你能够通过磁吸的方式去外接拓展。内置吸附磁铁，背面采用兼容LEGO孔设计，能够与你的其他的LEGO结构设计无缝对接。
-
-**AWS定制款嵌入了ATECC608A硬件加密芯片，能够以硬件层次密钥的方式加强设备物联网通信过程的安全**
+**AWS定制款嵌入了ATECC608硬件加密芯片，能够以硬件层次密钥的方式加强设备物联网通信过程的安全**
 
 **开关机操作：**
 
@@ -30,7 +36,7 @@
 ## 产品特性
 
 - 基于 ESP32 开发，支持WiFi、蓝牙
-- 内置ATECC608A硬件加密芯片
+- 内置ATECC608硬件加密芯片
 - 16M Flash，8M PSRAM
 - 内置扬声器，电源指示灯，震动马达，RTC，I2S功放，电容式触摸屏幕，电源键，复位按键
 - TF卡插槽(支持最大16GB)
@@ -41,9 +47,10 @@
 
 ## 包含
 
--  1x M5Stack Core2
--  1x M5GO Bottom For AWS
--  1x Type-C USB(20cm)
+- 1x M5Stack Core2
+- 1x M5GO Bottom2 for AWS
+- 1x Type-C USB (50cm)
+- 1x Hex wrench
 
 ## 应用
 
@@ -73,7 +80,7 @@
    </tr>
    <tr>
       <td>硬件加密芯片</td>
-      <td>ATECC608A</td>
+      <td>ATECC608</td>
    </tr>
    <tr>
       <td>输入电压</td>
@@ -172,6 +179,7 @@
    </tr>
 </table>
 
+<img class="pic" src="assets/img/product_pics/core/core2_aws/core2_aws_03.webp">
 
 ## EasyLoader
 
@@ -181,19 +189,18 @@
     <div style="background-color:white;">
         <div><img src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/easyloader_intro.webp"></div>
         <div class="easyloader-btn">
-            <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_M5Core2_FactoryTest.exe">Windows</a>
-            <!-- <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/MacOS/CORE/EasyLoader_M5Core2_FactoryTest.dmg">MacOS</a> -->
+            <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/EasyLoader/Windows/CORE/EasyLoader_Core2_for_AWS_Default.exe">Windows</a>
         </div>
     </div>
     <div>
         <video id="example_video" controls>
-            <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/CORE2%20.mp4" type="video/mp4">
+            <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Core/CORE2_FOR_AWS.mp4" type="video/mp4">
         </video>
         <div class="easyloader-mask">
         <a>
             <svg id="play-btn" t="1583228776634" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4152" width="75" height="75"><path d="M512 0C229.216 0 0 229.216 0 512s229.216 512 512 512 512-229.216 512-512S794.784 0 512 0z m0 928C282.24 928 96 741.76 96 512S282.24 96 512 96s416 186.24 416 416-186.24 416-416 416zM384 288l384 224-384 224z" p-id="4153" fill="#007aff"></path></svg></a>
             <p>案例描述:</p>
-            <p>该案例将执行喇叭，wifi，按键，加速计，TF-card(microSD)，屏幕等硬件运行测试.</p>
+            <p>Core2 for AWS出厂默认程序.</p>
         </div>
     </div>
 </div>
@@ -237,7 +244,7 @@ TF 卡最大支持 16GB
 
 <table>
  <tr><td>AXP192</td><td>AXP_IO1</td><td>AXP_LDO3</td></tr>
- <tr><td>Green LED</td><td>Vcc</td><td></td></tr>
+ <tr><td>Green LED</td><td>Vcc</td><td>/</td></tr>
  <tr><td>Vibration motor</td><td></td><td>Vcc</td></tr>
 </table>
 
@@ -280,7 +287,7 @@ TF 卡最大支持 16GB
  <tr><td>AXP192</td><td>SDA</td><td>SCL</td></tr>
  <tr><td>BM8563</td><td>SDA</td><td>SCL</td></tr>
  <tr><td>FT6336U</td><td>SDA</td><td>SCL</td></tr>
- <tr><td>ATECC608A</td><td>SDA</td><td>SCL</td></tr>
+ <tr><td>ATECC608</td><td>SDA</td><td>SCL</td></tr>
 </table>
 
 ## M5Core2 M-BUS示意图
@@ -360,7 +367,7 @@ TF 卡最大支持 16GB
    - [BM8563](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/BM8563_V1.1_cn.pdf)
    - [SY7088](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/SY7088-Silergy.pdf)
    - [AXP192](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/AXP192_datasheet_en.pdf)
-   - [ATECC608A](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/ATECC608A-TNGTLS-CryptoAuthentication-Data-Sheet-DS40002112B.pdf)
+   - [ATECC608](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/ATECC608-TNGTLS-CryptoAuthentication-Data-Sheet-DS40002112B.pdf)
 
 - **API** 
 
@@ -378,19 +385,20 @@ TF 卡最大支持 16GB
 
 ### Arduino IDE
 
-- 点击[这里](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Core/M5Core2/Arduino)获得Arduino示例
+- [FactoryTest](https://github.com/m5stack/M5Core2/tree/master/examples/core2_for_aws)
 
 ### 教程
 
 - [UIFlow](zh_CN/quick_start/core2/m5stack_core2_get_started_MicroPython)
 - [Arduino](zh_CN/arduino/arduino_core2_development)
 
+<el-divider content-position="right">Last updated: 2020-12-15</el-divider>
 
 <script>
 
-   var purchase_link = 'https://m5stack.com/collections/m5-core/products/m5stack-core2-esp32-iot-development-kit';
+   var purchase_link = 'https://m5stack.com/products/m5stack-core2-for-aws-esp32-iot-edukit';
 
-   var quickstart_link = 'https://docs.m5stack.com/#/zh_CN/quick_start/core2/m5stack_core2_quick_start';
+   var quickstart_link = '/#/zh_CN/quick_start/core2_for_aws/quick_start_list';
 
    anchor_search(purchase_link,quickstart_link);
    scrollFunc();

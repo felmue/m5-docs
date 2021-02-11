@@ -19,7 +19,7 @@
 ## 套件清单
 
 - 1x Hall effect Unit
-- 1x GROVE 线(20CM)
+- 1x HY2.0-4P线缆(20CM)
 - 1x 磁铁
 
 ## 应用
@@ -115,11 +115,11 @@
 
 ## 案例程序
 
-### Arduino
+### 1. Arduino
 
 - [点击此处获取Arduino案例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/HALL/HALL).
 
-## UIFlow
+### 2. UIFlow
 
 - [点击此处获取UIFlow案例程序](https://github.com/m5stack/M5-ProductExampleCodes/tree/master/Unit/HALL/UIFlow). 
 
